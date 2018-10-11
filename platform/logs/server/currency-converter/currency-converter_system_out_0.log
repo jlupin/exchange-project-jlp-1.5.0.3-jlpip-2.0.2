@@ -1,0 +1,19 @@
+[2018-10-11 15:22:06]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.exchange.configuration.CurrencyConverterJLupinConfiguration
+[2018-10-11 15:22:06]produced with success JLupinApplicationContainer:com.example.exchange.configuration.CurrencyConverterJLupinConfiguration$1
+[2018-10-11 15:22:07]microservice:currency-converter identity by os microservice id:20712 started correctly
+[2018-10-11 15:22:07]memory state for local server after start microservice:
+total memory:163.5 megabytes
+free  memory:104.8 megabytes
+used  memory:58.7  megabytes
+max   memory:228.0 megabytes
+[2018-10-11 15:22:07]microservice identity by os microservice id:20712 for microservice:currency-converter initialized correctly
+[2018-10-11 15:22:07][JLPIT]-[PROCESS_ID]20712[/PROCESS_ID]-[/JLPIT]
+[2018-10-11 15:22:07][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-10-11 15:22:07][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:22:08]user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/currency-converter
+[2018-10-11 15:22:08]temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:22:08]all microservers for microservice:currency-converter started correctly
+[2018-10-11 15:22:08]servers are starting now and this operation takes so far:0 seconds (10 milliseconds)
+[2018-10-11 15:22:10]application container is loading now and this operation takes so far:2 seconds (2226 milliseconds)
+[2018-10-11 15:22:10]application container for:currency-converter started correctly
+[2018-10-11 15:22:10]System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/currency-converter/currency-converter_system_out_%g.log

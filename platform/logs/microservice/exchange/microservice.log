@@ -1,0 +1,433 @@
+2018-10-11 15:21:18,764 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:TRANSMISSION thread pool size is:8
+2018-10-11 15:21:18,775 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:18,776 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:18,781 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:18,782 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:TRANSMISSION socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20026]
+2018-10-11 15:21:18,782 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 43690
+2018-10-11 15:21:18,785 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:TRANSMISSION start listen correctly
+2018-10-11 15:21:20,370 INFO  [com.example.currency.converter.SpringBootApplicationStarter] (pool-5-thread-6) Starting SpringBootApplicationStarter v1.5.0.3 on piotr with PID 20446 (/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_exchange/temp_1539264033323/exchange.war started by piotr in /home/piotr/IdeaProjects/exchange-project/platform/application/exchange)
+2018-10-11 15:21:20,382 INFO  [com.example.currency.converter.SpringBootApplicationStarter] (pool-5-thread-6) No active profile set, falling back to default profiles: default
+2018-10-11 15:21:20,472 INFO  [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] (pool-5-thread-6) Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4da499df: startup date [Thu Oct 11 15:21:20 CEST 2018]; root of context hierarchy
+2018-10-11 15:21:21,076 INFO  [org.hibernate.validator.internal.util.Version] (background-preinit) HV000001: Hibernate Validator 5.3.4.Final
+2018-10-11 15:21:22,243 INFO  [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] (pool-5-thread-6) Tomcat initialized with port(s): 20024 (http)
+2018-10-11 15:21:22,260 INFO  [org.apache.catalina.core.StandardService] (pool-5-thread-6) Starting service Tomcat
+2018-10-11 15:21:22,262 INFO  [org.apache.catalina.core.StandardEngine] (pool-5-thread-6) Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-10-11 15:21:22,912 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/exchange]] (localhost-startStop-1) Initializing Spring embedded WebApplicationContext
+2018-10-11 15:21:22,913 INFO  [org.springframework.web.context.ContextLoader] (localhost-startStop-1) Root WebApplicationContext: initialization completed in 2445 ms
+2018-10-11 15:21:23,443 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.currency.converter.controller.ConverterController.index()
+2018-10-11 15:21:23,445 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/convert],methods=[POST]}" onto public java.util.List<com.example.currency.converter.controller.out.ConvertOut> com.example.currency.converter.controller.ConverterController.convert(com.example.currency.converter.controller.in.ConvertIn)
+2018-10-11 15:21:23,450 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/toggleAlive],methods=[GET]}" onto public java.lang.String com.example.currency.converter.controller.AliveController.toggleAlive()
+2018-10-11 15:21:23,450 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/isAlive],methods=[GET]}" onto public java.lang.String com.example.currency.converter.controller.AliveController.isAlive()
+2018-10-11 15:21:23,455 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 15:21:23,456 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 15:21:23,464 INFO  [com.jlupin.servlet.monitor.configuration.JLupinServletMonitorConfiguration] (localhost-startStop-1) JLupin servlet monitor connected to microservice.
+2018-10-11 15:21:23,575 INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] (localhost-startStop-1) Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-11 15:21:23,582 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 15:21:23,582 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 15:21:23,583 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 15:21:23,583 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 15:21:23,583 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'jlupinRequestMonitorFilter' to: [/*]
+2018-10-11 15:21:23,859 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] (pool-5-thread-6) Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4da499df: startup date [Thu Oct 11 15:21:20 CEST 2018]; root of context hierarchy
+2018-10-11 15:21:23,969 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:21:23,970 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:21:24,060 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:21:24,105 INFO  [org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WelcomePageHandlerMapping] (pool-5-thread-6) Adding welcome page: class path resource [static/index.html]
+2018-10-11 15:21:24,316 INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] (pool-5-thread-6) Registering beans for JMX exposure on startup
+2018-10-11 15:21:24,341 INFO  [org.apache.coyote.http11.Http11NioProtocol] (pool-5-thread-6) Initializing ProtocolHandler ["http-nio-20024"]
+2018-10-11 15:21:24,375 INFO  [org.apache.coyote.http11.Http11NioProtocol] (pool-5-thread-6) Starting ProtocolHandler [http-nio-20024]
+2018-10-11 15:21:24,386 INFO  [org.apache.tomcat.util.net.NioSelectorPool] (pool-5-thread-6) Using a shared selector for servlet write/read
+2018-10-11 15:21:24,411 INFO  [org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer] (pool-5-thread-6) Tomcat started on port(s): 20024 (http)
+2018-10-11 15:21:24,419 INFO  [com.example.currency.converter.SpringBootApplicationStarter] (pool-5-thread-6) Started SpringBootApplicationStarter in 4.536 seconds (JVM running for 9.517)
+2018-10-11 15:21:24,964 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-5-thread-2) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.client.util.JLupinClientUtil;generateLoadBalancer;63
+com.jlupin.impl.client.util.JLupinClientUtil;generateInnerMicroserviceLoadBalancerDelegator;119
+com.example.currency.converter.configuration.ExchangeSpringConfiguration;getJLupinDelegator;24
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622;CGLIB$getJLupinDelegator$2;-1
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622$$FastClassBySpringCGLIB$$5b782122;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;358
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622;getJLupinDelegator;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;162
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;588
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1173
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1067
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;513
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;483
+org.springframework.beans.factory.support.AbstractBeanFactory$1;getObject;306
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;230
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;302
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;197
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;obtainBeanInstanceFromFactory;389
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622;getJLupinDelegator;-1
+com.example.currency.converter.configuration.ExchangeSpringConfiguration;getCurrencyConverterEurService;29
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622;CGLIB$getCurrencyConverterEurService$3;-1
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622$$FastClassBySpringCGLIB$$5b782122;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;358
+com.example.currency.converter.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$8b65b622;getCurrencyConverterEurService;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;162
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;588
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1173
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1067
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;513
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;483
+org.springframework.beans.factory.support.AbstractBeanFactory$1;getObject;306
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;230
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;302
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;202
+org.springframework.beans.factory.config.DependencyDescriptor;resolveCandidate;208
+org.springframework.beans.factory.support.DefaultListableBeanFactory;doResolveDependency;1138
+org.springframework.beans.factory.support.DefaultListableBeanFactory;resolveDependency;1066
+org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement;inject;585
+org.springframework.beans.factory.annotation.InjectionMetadata;inject;88
+org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;postProcessPropertyValues;366
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;populateBean;1264
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;553
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;483
+org.springframework.beans.factory.support.AbstractBeanFactory$1;getObject;306
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;230
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;302
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;197
+org.springframework.beans.factory.support.DefaultListableBeanFactory;preInstantiateSingletons;761
+org.springframework.context.support.AbstractApplicationContext;finishBeanFactoryInitialization;866
+org.springframework.context.support.AbstractApplicationContext;refresh;542
+org.springframework.boot.context.embedded.EmbeddedWebApplicationContext;refresh;122
+org.springframework.boot.SpringApplication;refresh;737
+org.springframework.boot.SpringApplication;refreshContext;370
+org.springframework.boot.SpringApplication;run;314
+org.springframework.boot.SpringApplication;run;1162
+org.springframework.boot.SpringApplication;run;1151
+com.example.currency.converter.SpringBootApplicationStarter;main;14
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.boot.loader.MainMethodRunner;run;48
+org.springframework.boot.loader.Launcher;launch;87
+org.springframework.boot.loader.Launcher;launch;50
+org.springframework.boot.loader.WarLauncher;main;59
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+com.jlupin.impl.util.JLupinUtil;invokeMethod;215
+com.jlupin.impl.server.servlet.springboot.JLupinServletSpringBootServerImpl;start;119
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;startServers;131
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;125
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl;doCommand;21
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl;doCommand;13
+com.jlupin.command.interpreter.transmission.microservice.JLupinMicroserviceTransmissionCommandInterpreter;doCommand;63
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl$1;executingInputAndGetOutputAsByteArrayWithPrintStreaming;35
+com.jlupin.impl.util.communication.protocol.transmission.JLupinCommunicationTransmissionProtocolUtil;receivedAndSendObjectWithPrintStreamingByOpenedSocketWithItsClosing;54
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl;doEntry;25
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;204
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;185
+java.util.concurrent.FutureTask;run;266
+java.util.concurrent.ThreadPoolExecutor;runWorker;1149
+java.util.concurrent.ThreadPoolExecutor$Worker;run;624
+java.lang.Thread;run;748
+started correctly
+2018-10-11 15:22:48,500 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:TRANSMISSION thread pool size is:8
+2018-10-11 15:22:48,511 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap1'}
+2018-10-11 15:22:48,511 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap2'}
+2018-10-11 15:22:48,518 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:22:48,518 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:TRANSMISSION socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20026]
+2018-10-11 15:22:48,518 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 43690
+2018-10-11 15:22:48,520 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:TRANSMISSION start listen correctly
+2018-10-11 15:22:51,913 INFO  [com.example.exchange.SpringBootApplicationStarter] (pool-5-thread-6) Starting SpringBootApplicationStarter v1.0-SNAPSHOT on piotr with PID 20838 (/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_exchange/temp_1539264164230/exchange.war started by piotr in /home/piotr/IdeaProjects/exchange-project/platform/application/exchange)
+2018-10-11 15:22:51,943 INFO  [com.example.exchange.SpringBootApplicationStarter] (pool-5-thread-6) No active profile set, falling back to default profiles: default
+2018-10-11 15:22:52,158 INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] (pool-5-thread-6) Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56ccaed: startup date [Thu Oct 11 15:22:52 CEST 2018]; root of context hierarchy
+2018-10-11 15:22:54,627 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] (pool-5-thread-6) Tomcat initialized with port(s): 20024 (http)
+2018-10-11 15:22:54,659 INFO  [org.apache.coyote.http11.Http11NioProtocol] (pool-5-thread-6) Initializing ProtocolHandler ["http-nio-20024"]
+2018-10-11 15:22:54,674 INFO  [org.apache.catalina.core.StandardService] (pool-5-thread-6) Starting service [Tomcat]
+2018-10-11 15:22:54,675 INFO  [org.apache.catalina.core.StandardEngine] (pool-5-thread-6) Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-11 15:22:54,689 INFO  [org.apache.catalina.core.AprLifecycleListener] (localhost-startStop-1) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea-IC-172.3968.16/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-10-11 15:22:55,306 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/exchange]] (localhost-startStop-1) Initializing Spring embedded WebApplicationContext
+2018-10-11 15:22:55,306 INFO  [org.springframework.web.context.ContextLoader] (localhost-startStop-1) Root WebApplicationContext: initialization completed in 3162 ms
+2018-10-11 15:22:55,643 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/exchange/convert],methods=[POST]}" onto public java.util.List<com.example.exchange.controller.exchange.out.ConvertOut> com.example.exchange.controller.exchange.ExchangeController.convert(com.example.exchange.controller.exchange.in.ConvertIn)
+2018-10-11 15:22:55,660 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 15:22:55,661 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 15:22:55,677 INFO  [com.jlupin.servlet.monitor.configuration.JLupinServletMonitorConfiguration] (localhost-startStop-1) JLupin servlet monitor connected to microservice.
+2018-10-11 15:22:55,750 INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] (localhost-startStop-1) Servlet dispatcherServlet mapped to [/]
+2018-10-11 15:22:55,756 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 15:22:55,756 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 15:22:55,756 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 15:22:55,757 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 15:22:55,757 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'jlupinRequestMonitorFilter' to: [/*]
+2018-10-11 15:22:56,025 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:22:56,275 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] (pool-5-thread-6) Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@56ccaed: startup date [Thu Oct 11 15:22:52 CEST 2018]; root of context hierarchy
+2018-10-11 15:22:56,438 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:22:56,438 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:22:56,741 INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] (pool-5-thread-6) Registering beans for JMX exposure on startup
+2018-10-11 15:22:56,764 INFO  [org.apache.coyote.http11.Http11NioProtocol] (pool-5-thread-6) Starting ProtocolHandler ["http-nio-20024"]
+2018-10-11 15:22:56,772 INFO  [org.apache.tomcat.util.net.NioSelectorPool] (pool-5-thread-6) Using a shared selector for servlet write/read
+2018-10-11 15:22:56,808 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] (pool-5-thread-6) Tomcat started on port(s): 20024 (http) with context path '/exchange'
+2018-10-11 15:22:56,816 INFO  [com.example.exchange.SpringBootApplicationStarter] (pool-5-thread-6) Started SpringBootApplicationStarter in 6.374 seconds (JVM running for 12.444)
+2018-10-11 15:22:57,226 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-5-thread-2) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.client.util.JLupinClientUtil;generateLoadBalancer;63
+com.jlupin.impl.client.util.JLupinClientUtil;generateInnerMicroserviceLoadBalancerDelegator;119
+com.example.exchange.configuration.ExchangeSpringConfiguration;getJLupinDelegator;22
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe;CGLIB$getJLupinDelegator$0;-1
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe$$FastClassBySpringCGLIB$$cbcf68c4;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe;getJLupinDelegator;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;154
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;579
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1254
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1103
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;541
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;501
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;228
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;resolveBeanReference;392
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;364
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe;getJLupinDelegator;-1
+com.example.exchange.configuration.ExchangeSpringConfiguration;getCurrencyConverterService;32
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe;CGLIB$getCurrencyConverterService$1;-1
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe$$FastClassBySpringCGLIB$$cbcf68c4;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$55b29ebe;getCurrencyConverterService;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;154
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;579
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1254
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1103
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;541
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;501
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;228
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.beans.factory.config.DependencyDescriptor;resolveCandidate;251
+org.springframework.beans.factory.support.DefaultListableBeanFactory;doResolveDependency;1138
+org.springframework.beans.factory.support.DefaultListableBeanFactory;resolveDependency;1065
+org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement;inject;584
+org.springframework.beans.factory.annotation.InjectionMetadata;inject;91
+org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;postProcessPropertyValues;373
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;populateBean;1348
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;578
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;501
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;228
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.beans.factory.support.DefaultListableBeanFactory;preInstantiateSingletons;760
+org.springframework.context.support.AbstractApplicationContext;finishBeanFactoryInitialization;869
+org.springframework.context.support.AbstractApplicationContext;refresh;550
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;refresh;140
+org.springframework.boot.SpringApplication;refresh;759
+org.springframework.boot.SpringApplication;refreshContext;395
+org.springframework.boot.SpringApplication;run;327
+org.springframework.boot.SpringApplication;run;1255
+org.springframework.boot.SpringApplication;run;1243
+com.example.exchange.SpringBootApplicationStarter;main;13
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.boot.loader.MainMethodRunner;run;48
+org.springframework.boot.loader.Launcher;launch;87
+org.springframework.boot.loader.Launcher;launch;50
+org.springframework.boot.loader.WarLauncher;main;58
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+com.jlupin.impl.util.JLupinUtil;invokeMethod;215
+com.jlupin.impl.server.servlet.springboot.JLupinServletSpringBootServerImpl;start;119
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;startServers;131
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;125
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl;doCommand;21
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl;doCommand;13
+com.jlupin.command.interpreter.transmission.microservice.JLupinMicroserviceTransmissionCommandInterpreter;doCommand;63
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl$1;executingInputAndGetOutputAsByteArrayWithPrintStreaming;35
+com.jlupin.impl.util.communication.protocol.transmission.JLupinCommunicationTransmissionProtocolUtil;receivedAndSendObjectWithPrintStreamingByOpenedSocketWithItsClosing;54
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl;doEntry;25
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;204
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;185
+java.util.concurrent.FutureTask;run;266
+java.util.concurrent.ThreadPoolExecutor;runWorker;1149
+java.util.concurrent.ThreadPoolExecutor$Worker;run;624
+java.lang.Thread;run;748
+started correctly
+2018-10-11 15:24:52,315 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/exchange]] (http-nio-20024-exec-1) Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-11 15:24:52,315 INFO  [org.springframework.web.servlet.DispatcherServlet] (http-nio-20024-exec-1) FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-11 15:24:52,753 INFO  [org.springframework.web.servlet.DispatcherServlet] (http-nio-20024-exec-1) FrameworkServlet 'dispatcherServlet': initialization completed in 438 ms
+2018-10-11 15:25:20,451 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:TRANSMISSION thread pool size is:8
+2018-10-11 15:25:20,461 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap1'}
+2018-10-11 15:25:20,461 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap2'}
+2018-10-11 15:25:20,466 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:25:20,466 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:TRANSMISSION socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20026]
+2018-10-11 15:25:20,467 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 43690
+2018-10-11 15:25:20,468 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:TRANSMISSION start listen correctly
+2018-10-11 15:25:22,395 INFO  [com.example.exchange.SpringBootApplicationStarter] (pool-5-thread-6) Starting SpringBootApplicationStarter v1.0-SNAPSHOT on piotr with PID 21091 (/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_exchange/temp_1539264316295/exchange.war started by piotr in /home/piotr/IdeaProjects/exchange-project/platform/application/exchange)
+2018-10-11 15:25:22,415 INFO  [com.example.exchange.SpringBootApplicationStarter] (pool-5-thread-6) No active profile set, falling back to default profiles: default
+2018-10-11 15:25:22,507 INFO  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] (pool-5-thread-6) Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@401f6b38: startup date [Thu Oct 11 15:25:22 CEST 2018]; root of context hierarchy
+2018-10-11 15:25:24,580 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] (pool-5-thread-6) Tomcat initialized with port(s): 20024 (http)
+2018-10-11 15:25:24,612 INFO  [org.apache.coyote.http11.Http11NioProtocol] (pool-5-thread-6) Initializing ProtocolHandler ["http-nio-20024"]
+2018-10-11 15:25:24,626 INFO  [org.apache.catalina.core.StandardService] (pool-5-thread-6) Starting service [Tomcat]
+2018-10-11 15:25:24,627 INFO  [org.apache.catalina.core.StandardEngine] (pool-5-thread-6) Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-10-11 15:25:24,640 INFO  [org.apache.catalina.core.AprLifecycleListener] (localhost-startStop-1) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea-IC-172.3968.16/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-10-11 15:25:25,310 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/exchange]] (localhost-startStop-1) Initializing Spring embedded WebApplicationContext
+2018-10-11 15:25:25,310 INFO  [org.springframework.web.context.ContextLoader] (localhost-startStop-1) Root WebApplicationContext: initialization completed in 2809 ms
+2018-10-11 15:25:25,670 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/convert],methods=[POST]}" onto public java.util.List<com.example.exchange.controller.exchange.out.ConvertOut> com.example.exchange.controller.exchange.ExchangeController.convert(com.example.exchange.controller.exchange.in.ConvertIn)
+2018-10-11 15:25:25,682 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-11 15:25:25,683 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] (localhost-startStop-1) Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-11 15:25:25,692 INFO  [com.jlupin.servlet.monitor.configuration.JLupinServletMonitorConfiguration] (localhost-startStop-1) JLupin servlet monitor connected to microservice.
+2018-10-11 15:25:25,757 INFO  [org.springframework.boot.web.servlet.ServletRegistrationBean] (localhost-startStop-1) Servlet dispatcherServlet mapped to [/]
+2018-10-11 15:25:25,761 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-11 15:25:25,762 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-11 15:25:25,762 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-11 15:25:25,762 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-11 15:25:25,762 INFO  [org.springframework.boot.web.servlet.FilterRegistrationBean] (localhost-startStop-1) Mapping filter: 'jlupinRequestMonitorFilter' to: [/*]
+2018-10-11 15:25:26,002 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:25:26,229 INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] (pool-5-thread-6) Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@401f6b38: startup date [Thu Oct 11 15:25:22 CEST 2018]; root of context hierarchy
+2018-10-11 15:25:26,336 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:25:26,336 INFO  [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] (pool-5-thread-6) Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-11 15:25:26,591 INFO  [org.springframework.jmx.export.annotation.AnnotationMBeanExporter] (pool-5-thread-6) Registering beans for JMX exposure on startup
+2018-10-11 15:25:26,616 INFO  [org.apache.coyote.http11.Http11NioProtocol] (pool-5-thread-6) Starting ProtocolHandler ["http-nio-20024"]
+2018-10-11 15:25:26,622 INFO  [org.apache.tomcat.util.net.NioSelectorPool] (pool-5-thread-6) Using a shared selector for servlet write/read
+2018-10-11 15:25:26,651 INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] (pool-5-thread-6) Tomcat started on port(s): 20024 (http) with context path '/exchange'
+2018-10-11 15:25:26,658 INFO  [com.example.exchange.SpringBootApplicationStarter] (pool-5-thread-6) Started SpringBootApplicationStarter in 5.02 seconds (JVM running for 10.25)
+2018-10-11 15:25:27,041 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-5-thread-2) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.client.util.JLupinClientUtil;generateLoadBalancer;63
+com.jlupin.impl.client.util.JLupinClientUtil;generateInnerMicroserviceLoadBalancerDelegator;119
+com.example.exchange.configuration.ExchangeSpringConfiguration;getJLupinDelegator;22
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f;CGLIB$getJLupinDelegator$0;-1
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f$$FastClassBySpringCGLIB$$93168749;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f;getJLupinDelegator;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;154
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;579
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1254
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1103
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;541
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;501
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;228
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;resolveBeanReference;392
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;364
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f;getJLupinDelegator;-1
+com.example.exchange.configuration.ExchangeSpringConfiguration;getCurrencyConverterService;32
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f;CGLIB$getCurrencyConverterService$1;-1
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f$$FastClassBySpringCGLIB$$93168749;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.exchange.configuration.ExchangeSpringConfiguration$$EnhancerBySpringCGLIB$$d561e09f;getCurrencyConverterService;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;154
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;579
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1254
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1103
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;541
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;501
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;228
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.beans.factory.config.DependencyDescriptor;resolveCandidate;251
+org.springframework.beans.factory.support.DefaultListableBeanFactory;doResolveDependency;1138
+org.springframework.beans.factory.support.DefaultListableBeanFactory;resolveDependency;1065
+org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement;inject;584
+org.springframework.beans.factory.annotation.InjectionMetadata;inject;91
+org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;postProcessPropertyValues;373
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;populateBean;1348
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;578
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;501
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;228
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.beans.factory.support.DefaultListableBeanFactory;preInstantiateSingletons;760
+org.springframework.context.support.AbstractApplicationContext;finishBeanFactoryInitialization;869
+org.springframework.context.support.AbstractApplicationContext;refresh;550
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;refresh;140
+org.springframework.boot.SpringApplication;refresh;759
+org.springframework.boot.SpringApplication;refreshContext;395
+org.springframework.boot.SpringApplication;run;327
+org.springframework.boot.SpringApplication;run;1255
+org.springframework.boot.SpringApplication;run;1243
+com.example.exchange.SpringBootApplicationStarter;main;13
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.boot.loader.MainMethodRunner;run;48
+org.springframework.boot.loader.Launcher;launch;87
+org.springframework.boot.loader.Launcher;launch;50
+org.springframework.boot.loader.WarLauncher;main;58
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+com.jlupin.impl.util.JLupinUtil;invokeMethod;215
+com.jlupin.impl.server.servlet.springboot.JLupinServletSpringBootServerImpl;start;119
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;startServers;131
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;125
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl;doCommand;21
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartServersFunctionImpl;doCommand;13
+com.jlupin.command.interpreter.transmission.microservice.JLupinMicroserviceTransmissionCommandInterpreter;doCommand;63
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl$1;executingInputAndGetOutputAsByteArrayWithPrintStreaming;35
+com.jlupin.impl.util.communication.protocol.transmission.JLupinCommunicationTransmissionProtocolUtil;receivedAndSendObjectWithPrintStreamingByOpenedSocketWithItsClosing;54
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl;doEntry;25
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;204
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;185
+java.util.concurrent.FutureTask;run;266
+java.util.concurrent.ThreadPoolExecutor;runWorker;1149
+java.util.concurrent.ThreadPoolExecutor$Worker;run;624
+java.lang.Thread;run;748
+started correctly
+2018-10-11 15:25:30,193 INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/exchange]] (http-nio-20024-exec-1) Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-11 15:25:30,193 INFO  [org.springframework.web.servlet.DispatcherServlet] (http-nio-20024-exec-1) FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-11 15:25:30,645 INFO  [org.springframework.web.servlet.DispatcherServlet] (http-nio-20024-exec-1) FrameworkServlet 'dispatcherServlet': initialization completed in 452 ms

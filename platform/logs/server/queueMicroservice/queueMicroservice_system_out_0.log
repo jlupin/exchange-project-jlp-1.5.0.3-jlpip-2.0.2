@@ -1,0 +1,19 @@
+[2018-10-11 15:20:43]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.jlupin.impl.microservice.partofjlupin.asynchronous.jlupin.configuration.JLupinApplicationContainerProducerImpl
+[2018-10-11 15:20:43]produced with success JLupinApplicationContainer:com.jlupin.impl.microservice.partofjlupin.asynchronous.jlupin.configuration.JLupinApplicationContainerProducerImpl$1
+[2018-10-11 15:20:44]microservice:queueMicroservice identity by os microservice id:20115 started correctly
+[2018-10-11 15:20:44]memory state for local server after start microservice:
+total memory:147.5 megabytes
+free  memory:47.0  megabytes
+used  memory:100.5 megabytes
+max   memory:228.0 megabytes
+[2018-10-11 15:20:44]microservice identity by os microservice id:20115 for microservice:queueMicroservice initialized correctly
+[2018-10-11 15:20:44][JLPIT]-[PROCESS_ID]20115[/PROCESS_ID]-[/JLPIT]
+[2018-10-11 15:20:44][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-10-11 15:20:44][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:20:44]user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/queueMicroservice
+[2018-10-11 15:20:44]temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:20:44]all microservers for microservice:queueMicroservice started correctly
+[2018-10-11 15:20:44]servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-10-11 15:20:46]application container is loading now and this operation takes so far:1 seconds (1946 milliseconds)
+[2018-10-11 15:20:46]application container for:queueMicroservice started correctly
+[2018-10-11 15:20:46]System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/queueMicroservice/queueMicroservice_system_out_%g.log

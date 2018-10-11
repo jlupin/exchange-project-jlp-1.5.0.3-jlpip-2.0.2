@@ -1,0 +1,871 @@
+[2018-10-11 15:19:20]
+
+       _ _                 _         _____  _       _    __                     
+      | | |               (_)       |  __ \| |     | |  / _|                    
+      | | |    _   _ _ __  _ _ __   | |__) | | __ _| |_| |_ ___  _ __ _ __ ___  
+  _   | | |   | | | | '_ \| | '_ \  |  ___/| |/ _` | __|  _/ _ \| '__| '_ ` _ \ 
+ | |__| | |___| |_| | |_) | | | | | | |    | | (_| | |_| || (_) | |  | | | | | |
+  \____/|______\__,_| .__/|_|_| |_| |_|    |_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+                    | |                                                         
+                    |_|                                                         
+
+
+[2018-10-11 15:19:20]
+
+  __   _____  ___          _____                           
+ /_ | | ____|/ _ \        / ____|                          
+  | | | |__ | | | |______| |    _   _ _ __  _ __ _   _ ___ 
+  | | |___ \| | | |______| |   | | | | '_ \| '__| | | / __|
+  | |_ ___) | |_| |      | |___| |_| | |_) | |  | |_| \__ \
+  |_(_)____(_)___/        \_____\__, | .__/|_|   \__,_|___/
+                                 __/ | |                   
+                                |___/|_|                   
+
+
+[2018-10-11 15:19:20]name:JLupin Platform Community Edition
+[2018-10-11 15:19:20]code:CYPRUS
+[2018-10-11 15:19:20]version:1.5.0.3-ce
+[2018-10-11 15:19:20]commit no:c68746b8
+
+[2018-10-11 15:19:20]initializing main server
+[2018-10-11 15:19:23]starting event log manager
+[2018-10-11 15:19:23]event log manager started correctly
+[2018-10-11 15:19:24]com.jlupin.command.interpreter.text.exception.JLupinTextCommandInterpreterException: an error occurred during executing serverStart all application on serverStart microservice caused by:
+[2018-10-11 15:19:24]	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:44)
+[2018-10-11 15:19:24]	at com.jlupin.starter.main.start.JLupinMainServerStarter.start(JLupinMainServerStarter.java:90)
+[2018-10-11 15:19:24]	at com.jlupin.starter.main.init.JLupinMainServerInitializer.main(JLupinMainServerInitializer.java:49)
+[2018-10-11 15:19:24]Caused by: com.jlupin.command.interpreter.bytes.exception.JLupinByteCommandInterpreterException: an exception occurred during starting all servers and microservices microservice procedure caused by:
+[2018-10-11 15:19:24]	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:70)
+[2018-10-11 15:19:24]	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:40)
+[2018-10-11 15:19:24]	... 2 more
+[2018-10-11 15:19:24]Caused by: com.jlupin.command.executor.exception.JLupinCommandExecutorException: an unexpected error occurred during initialize and start main servers caused by:
+[2018-10-11 15:19:24]	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:142)
+[2018-10-11 15:19:24]	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:67)
+[2018-10-11 15:19:24]	... 3 more
+[2018-10-11 15:19:24]Caused by: com.jlupin.command.executor.main.loadstrategy.manager.exception.JLupinMainServerLoadStrategyManagerException: an error occurred during start single main server listen on port:9090 caused by:
+[2018-10-11 15:19:24]	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:142)
+[2018-10-11 15:19:24]	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:126)
+[2018-10-11 15:19:24]	... 4 more
+[2018-10-11 15:19:24]Caused by: com.jlupin.interfaces.server.exception.JLupinServerException: an unexpected error occurred during starting server:JLRMC on port:9090 caused by:
+[2018-10-11 15:19:24]	at com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl.start(JLupinNativeDefaultServerImpl.java:175)
+[2018-10-11 15:19:24]	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:140)
+[2018-10-11 15:19:24]	... 5 more
+[2018-10-11 15:19:24]Caused by: com.jlupin.impl.server.jnative.defaults.factory.socket.exception.JLupinServerSocketFactoryException: an error occurred during creating server socket on port:9090 caused by another process listening on them - error details:
+[2018-10-11 15:19:24]	at com.jlupin.impl.server.jnative.defaults.factory.socket.nossl.JLupinNoSSLServerSocketFactoryImpl.produceServerSocket(JLupinNoSSLServerSocketFactoryImpl.java:37)
+[2018-10-11 15:19:24]	at com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl.start(JLupinNativeDefaultServerImpl.java:152)
+[2018-10-11 15:19:24]	... 6 more
+[2018-10-11 15:19:24]Caused by: java.net.BindException: Adres jest już w użyciu (Bind failed)
+[2018-10-11 15:19:24]	at java.net.PlainSocketImpl.socketBind(Native Method)
+[2018-10-11 15:19:24]	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+[2018-10-11 15:19:24]	at java.net.ServerSocket.bind(ServerSocket.java:375)
+[2018-10-11 15:19:24]	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+[2018-10-11 15:19:24]	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+[2018-10-11 15:19:24]	at com.jlupin.impl.server.jnative.defaults.factory.socket.nossl.JLupinNoSSLServerSocketFactoryImpl.produceServerSocket(JLupinNoSSLServerSocketFactoryImpl.java:18)
+[2018-10-11 15:19:24]	... 7 more
+[2018-10-11 15:19:24]!ERROR server did not initialized correctly
+[2018-10-11 15:19:24]information log files for local processes - especially error directory if local microservice had response timeout
+[2018-10-11 15:19:24]information log files for main server
+[2018-10-11 15:19:24]all locks was released
+[2018-10-11 15:19:24]start quit force...
+[2018-10-11 15:19:24]stopping event log manager
+[2018-10-11 15:19:24]event log manager stopped correctly
+[2018-10-11 15:19:24]all locks was released
+[2018-10-11 15:19:24]stop force all processes...
+[2018-10-11 15:19:24]all microservices closed force
+[2018-10-11 15:19:24]command 'quit force' has been executed correctly
+[2018-10-11 15:20:28]
+
+       _ _                 _         _____  _       _    __                     
+      | | |               (_)       |  __ \| |     | |  / _|                    
+      | | |    _   _ _ __  _ _ __   | |__) | | __ _| |_| |_ ___  _ __ _ __ ___  
+  _   | | |   | | | | '_ \| | '_ \  |  ___/| |/ _` | __|  _/ _ \| '__| '_ ` _ \ 
+ | |__| | |___| |_| | |_) | | | | | | |    | | (_| | |_| || (_) | |  | | | | | |
+  \____/|______\__,_| .__/|_|_| |_| |_|    |_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+                    | |                                                         
+                    |_|                                                         
+
+
+[2018-10-11 15:20:28]
+
+  __   _____  ___          _____                           
+ /_ | | ____|/ _ \        / ____|                          
+  | | | |__ | | | |______| |    _   _ _ __  _ __ _   _ ___ 
+  | | |___ \| | | |______| |   | | | | '_ \| '__| | | / __|
+  | |_ ___) | |_| |      | |___| |_| | |_) | |  | |_| \__ \
+  |_(_)____(_)___/        \_____\__, | .__/|_|   \__,_|___/
+                                 __/ | |                   
+                                |___/|_|                   
+
+
+[2018-10-11 15:20:28]name:JLupin Platform Community Edition
+[2018-10-11 15:20:28]code:CYPRUS
+[2018-10-11 15:20:28]version:1.5.0.3-ce
+[2018-10-11 15:20:28]commit no:c68746b8
+
+[2018-10-11 15:20:28]initializing main server
+[2018-10-11 15:20:31]starting event log manager
+[2018-10-11 15:20:31]event log manager started correctly
+[2018-10-11 15:20:33]configuring new microservice:queueMicroservice with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:queueMicroservice:[20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007]
+[2018-10-11 15:20:33]configuring new microservice:exchange-rates with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:exchange-rates:[20008, 20009, 20010, 20011, 20012, 20013, 20014, 20015]
+[2018-10-11 15:20:33]configuring new microservice:channelMicroservice with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:channelMicroservice:[20016, 20017, 20018, 20019, 20020, 20021, 20022, 20023]
+[2018-10-11 15:20:33]configuring new microservice:exchange with ports amount:6
+[2018-10-11 15:20:33]available ports for microservice:exchange:[20024, 20025, 20026, 20027, 20028, 20029]
+[2018-10-11 15:20:33]configuring new microservice:currency-converter-gbp with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:currency-converter-gbp:[20030, 20031, 20032, 20033, 20034, 20035, 20036, 20037]
+[2018-10-11 15:20:33]configuring new microservice:http-session-repository with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:http-session-repository:[20038, 20039, 20040, 20041, 20042, 20043, 20044, 20045]
+[2018-10-11 15:20:33]configuring new microservice:currency-converter-chf with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:currency-converter-chf:[20046, 20047, 20048, 20049, 20050, 20051, 20052, 20053]
+[2018-10-11 15:20:33]configuring new microservice:currency-converter-eur with ports amount:8
+[2018-10-11 15:20:33]available ports for microservice:currency-converter-eur:[20054, 20055, 20056, 20057, 20058, 20059, 20060, 20061]
+[2018-10-11 15:20:33]microservices start in order:[channelMicroservice, queueMicroservice, currency-converter-eur, currency-converter-chf, http-session-repository, currency-converter-gbp, exchange, exchange-rates]
+[2018-10-11 15:20:33]lock by type:MICROSERVICE_HEALTH_CHECK is lock by operation:START
+[2018-10-11 15:20:33]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is lock by operation:START
+[2018-10-11 15:20:33]start not running processes in parallel mode:false
+[2018-10-11 15:20:33]microservice:channelMicroservice is new, try start them...
+[2018-10-11 15:20:33]isArchive flag is set to false
+[2018-10-11 15:20:33]already used memory for all running microservices is:0 (0 bytes)
+[2018-10-11 15:20:33]this microservice requires in bytes:268435456(256.0 megabytes)
+[2018-10-11 15:20:33]successfully increased used memory for all microservices and now is:268435456 (256.0 megabytes)
+[2018-10-11 15:20:33]init os process for microservice:channelMicroservice
+[2018-10-11 15:20:33]start sending command:ECHO to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:30000
+[2018-10-11 15:20:33]time remaining to finish operation:ECHO on microservice:channelMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:33]copying microservice:channelMicroservice files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_channelMicroservice/temp_1539264033348
+[2018-10-11 15:20:33]now main microservice is waiting:900000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:channelMicroservice by operating system
+[2018-10-11 15:20:37]init new microservice for microservice:channelMicroservice is executing now and takes so far:3 seconds (3978 milliseconds)
+[2018-10-11 15:20:37]microservice:channelMicroservice returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.jlupin.impl.microservice.partofjlupin.asynchronous.jlupin.configuration.JLupinApplicationContainerProducerImpl
+produced with success JLupinApplicationContainer:com.jlupin.impl.microservice.partofjlupin.asynchronous.jlupin.configuration.JLupinApplicationContainerProducerImpl$1
+microservice:channelMicroservice identity by os microservice id:20053 started correctly
+memory state for local server after start microservice:
+total memory:170.5 megabytes
+free  memory:103.0 megabytes
+used  memory:67.5  megabytes
+max   memory:228.0 megabytes
+microservice identity by os microservice id:20053 for microservice:channelMicroservice initialized correctly
+[JLPIT]-[PROCESS_ID]20053[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:20:37]start sending command:ECHO to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:30000
+[2018-10-11 15:20:37]time remaining to finish operation:ECHO on microservice:channelMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:ECHO on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:900000
+[2018-10-11 15:20:37]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:channelMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:ECHO to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:30000
+[2018-10-11 15:20:37]time remaining to finish operation:ECHO on microservice:channelMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:ECHO on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:900000
+[2018-10-11 15:20:37]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:channelMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:900000
+[2018-10-11 15:20:37]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:channelMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:ECHO to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:30000
+[2018-10-11 15:20:37]time remaining to finish operation:ECHO on microservice:channelMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:ECHO on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:START_SERVERS to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:900000
+[2018-10-11 15:20:37]time remaining to finish operation:START_SERVERS on microservice:channelMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:37]output line from microservice:channelMicroservice during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/channelMicroservice
+[2018-10-11 15:20:37]output line from microservice:channelMicroservice during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:20:37]output line from microservice:channelMicroservice during executing command:START_SERVERS:all microservers for microservice:channelMicroservice started correctly
+[2018-10-11 15:20:37]output line from microservice:channelMicroservice during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (8 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:START_SERVERS on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:ECHO to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:30000
+[2018-10-11 15:20:37]time remaining to finish operation:ECHO on microservice:channelMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:37]successfully executed command:ECHO on microservice:channelMicroservice
+[2018-10-11 15:20:37]start sending command:START_APPLICATION_CONTAINER to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:900000
+[2018-10-11 15:20:37]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:channelMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:39]output line from microservice:channelMicroservice during executing command:START_APPLICATION_CONTAINER:remote service names:[jLupinChannelManagerService]
+[2018-10-11 15:20:39]output line from microservice:channelMicroservice during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:2 seconds (2032 milliseconds)
+[2018-10-11 15:20:39]output line from microservice:channelMicroservice during executing command:START_APPLICATION_CONTAINER:application container for:channelMicroservice started correctly
+[2018-10-11 15:20:39]output line from microservice:channelMicroservice during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/channelMicroservice/channelMicroservice_system_out_%g.log
+[2018-10-11 15:20:39]successfully executed command:START_APPLICATION_CONTAINER on microservice:channelMicroservice
+[2018-10-11 15:20:39]start sending command:ECHO to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:30000
+[2018-10-11 15:20:39]time remaining to finish operation:ECHO on microservice:channelMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:39]successfully executed command:ECHO on microservice:channelMicroservice
+[2018-10-11 15:20:39]start sending command:START_REGISTERED_RESOURCES to microservice:channelMicroservice linked to address:localhost and port:20020 with timeout:900000
+[2018-10-11 15:20:39]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:channelMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:40]successfully executed command:START_REGISTERED_RESOURCES on microservice:channelMicroservice
+[2018-10-11 15:20:40]start procedure 'startReadProcessStreams' for microservice:channelMicroservice
+[2018-10-11 15:20:40]stop procedure 'startReadProcessStreams' for microservice:channelMicroservice
+[2018-10-11 15:20:40]added configuration to process manager load balancer for process:channelMicroservice
+[2018-10-11 15:20:40]microservice:queueMicroservice is new, try start them...
+[2018-10-11 15:20:40]isArchive flag is set to false
+[2018-10-11 15:20:40]already used memory for all running microservices is:268435456 (256.0 megabytes)
+[2018-10-11 15:20:40]this microservice requires in bytes:268435456(256.0 megabytes)
+[2018-10-11 15:20:40]successfully increased used memory for all microservices and now is:536870912 (512.0 megabytes)
+[2018-10-11 15:20:40]init os process for microservice:queueMicroservice
+[2018-10-11 15:20:40]start sending command:ECHO to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:30000
+[2018-10-11 15:20:40]time remaining to finish operation:ECHO on microservice:queueMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:40]copying microservice:queueMicroservice files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_queueMicroservice/temp_1539264033360
+[2018-10-11 15:20:40]now main microservice is waiting:900000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:queueMicroservice by operating system
+[2018-10-11 15:20:44]init new microservice for microservice:queueMicroservice is executing now and takes so far:3 seconds (3879 milliseconds)
+[2018-10-11 15:20:44]microservice:queueMicroservice returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.jlupin.impl.microservice.partofjlupin.asynchronous.jlupin.configuration.JLupinApplicationContainerProducerImpl
+produced with success JLupinApplicationContainer:com.jlupin.impl.microservice.partofjlupin.asynchronous.jlupin.configuration.JLupinApplicationContainerProducerImpl$1
+microservice:queueMicroservice identity by os microservice id:20115 started correctly
+memory state for local server after start microservice:
+total memory:147.5 megabytes
+free  memory:47.0  megabytes
+used  memory:100.5 megabytes
+max   memory:228.0 megabytes
+microservice identity by os microservice id:20115 for microservice:queueMicroservice initialized correctly
+[JLPIT]-[PROCESS_ID]20115[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:20:44]start sending command:ECHO to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:30000
+[2018-10-11 15:20:44]time remaining to finish operation:ECHO on microservice:queueMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:ECHO on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:900000
+[2018-10-11 15:20:44]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:queueMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:ECHO to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:30000
+[2018-10-11 15:20:44]time remaining to finish operation:ECHO on microservice:queueMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:ECHO on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:900000
+[2018-10-11 15:20:44]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:queueMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:900000
+[2018-10-11 15:20:44]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:queueMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:ECHO to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:30000
+[2018-10-11 15:20:44]time remaining to finish operation:ECHO on microservice:queueMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:ECHO on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:START_SERVERS to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:900000
+[2018-10-11 15:20:44]time remaining to finish operation:START_SERVERS on microservice:queueMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:44]output line from microservice:queueMicroservice during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/queueMicroservice
+[2018-10-11 15:20:44]output line from microservice:queueMicroservice during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:20:44]output line from microservice:queueMicroservice during executing command:START_SERVERS:all microservers for microservice:queueMicroservice started correctly
+[2018-10-11 15:20:44]output line from microservice:queueMicroservice during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:START_SERVERS on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:ECHO to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:30000
+[2018-10-11 15:20:44]time remaining to finish operation:ECHO on microservice:queueMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:44]successfully executed command:ECHO on microservice:queueMicroservice
+[2018-10-11 15:20:44]start sending command:START_APPLICATION_CONTAINER to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:900000
+[2018-10-11 15:20:44]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:queueMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:46]output line from microservice:queueMicroservice during executing command:START_APPLICATION_CONTAINER:remote service names:[jLupinQueueManagerService]
+[2018-10-11 15:20:46]output line from microservice:queueMicroservice during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:1 seconds (1946 milliseconds)
+[2018-10-11 15:20:46]output line from microservice:queueMicroservice during executing command:START_APPLICATION_CONTAINER:application container for:queueMicroservice started correctly
+[2018-10-11 15:20:46]output line from microservice:queueMicroservice during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/queueMicroservice/queueMicroservice_system_out_%g.log
+[2018-10-11 15:20:46]successfully executed command:START_APPLICATION_CONTAINER on microservice:queueMicroservice
+[2018-10-11 15:20:46]start sending command:ECHO to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:30000
+[2018-10-11 15:20:46]time remaining to finish operation:ECHO on microservice:queueMicroservice:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:46]successfully executed command:ECHO on microservice:queueMicroservice
+[2018-10-11 15:20:46]start sending command:START_REGISTERED_RESOURCES to microservice:queueMicroservice linked to address:localhost and port:20004 with timeout:900000
+[2018-10-11 15:20:46]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:queueMicroservice:900 seconds (900000 milliseconds)
+[2018-10-11 15:20:46]successfully executed command:START_REGISTERED_RESOURCES on microservice:queueMicroservice
+[2018-10-11 15:20:46]start procedure 'startReadProcessStreams' for microservice:queueMicroservice
+[2018-10-11 15:20:46]stop procedure 'startReadProcessStreams' for microservice:queueMicroservice
+[2018-10-11 15:20:46]added configuration to process manager load balancer for process:queueMicroservice
+[2018-10-11 15:20:46]microservice:currency-converter-eur is new, try start them...
+[2018-10-11 15:20:46]isArchive flag is set to false
+[2018-10-11 15:20:46]already used memory for all running microservices is:536870912 (512.0 megabytes)
+[2018-10-11 15:20:46]this microservice requires in bytes:134217728(128.0 megabytes)
+[2018-10-11 15:20:46]successfully increased used memory for all microservices and now is:671088640 (640.0 megabytes)
+[2018-10-11 15:20:46]init os process for microservice:currency-converter-eur
+[2018-10-11 15:20:46]start sending command:ECHO to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:30000
+[2018-10-11 15:20:46]copying microservice:currency-converter-eur files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_currency-converter-eur/temp_1539264033310
+[2018-10-11 15:20:46]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:currency-converter-eur by operating system
+[2018-10-11 15:20:50]init new microservice for microservice:currency-converter-eur is executing now and takes so far:3 seconds (3875 milliseconds)
+[2018-10-11 15:20:50]microservice:currency-converter-eur returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.currency.converter.configuration.CurrencyConverterEurJLupinConfiguration
+produced with success JLupinApplicationContainer:com.example.currency.converter.configuration.CurrencyConverterEurJLupinConfiguration$1
+microservice:currency-converter-eur identity by os microservice id:20184 started correctly
+memory state for local server after start microservice:
+total memory:115.5 megabytes
+free  memory:55.9  megabytes
+used  memory:59.6  megabytes
+max   memory:115.5 megabytes
+microservice identity by os microservice id:20184 for microservice:currency-converter-eur initialized correctly
+[JLPIT]-[PROCESS_ID]20184[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:20:50]start sending command:ECHO to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:30000
+[2018-10-11 15:20:50]time remaining to finish operation:ECHO on microservice:currency-converter-eur:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:50]successfully executed command:ECHO on microservice:currency-converter-eur
+[2018-10-11 15:20:50]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:90000
+[2018-10-11 15:20:50]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:currency-converter-eur:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:50]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:currency-converter-eur
+[2018-10-11 15:20:50]start sending command:ECHO to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:30000
+[2018-10-11 15:20:50]time remaining to finish operation:ECHO on microservice:currency-converter-eur:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:51]successfully executed command:ECHO on microservice:currency-converter-eur
+[2018-10-11 15:20:51]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:90000
+[2018-10-11 15:20:51]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:currency-converter-eur:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:51]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:currency-converter-eur
+[2018-10-11 15:20:51]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:90000
+[2018-10-11 15:20:51]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:currency-converter-eur:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:51]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:currency-converter-eur
+[2018-10-11 15:20:51]start sending command:ECHO to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:30000
+[2018-10-11 15:20:51]time remaining to finish operation:ECHO on microservice:currency-converter-eur:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:51]successfully executed command:ECHO on microservice:currency-converter-eur
+[2018-10-11 15:20:51]start sending command:START_SERVERS to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:90000
+[2018-10-11 15:20:51]time remaining to finish operation:START_SERVERS on microservice:currency-converter-eur:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:51]output line from microservice:currency-converter-eur during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/currency-converter-eur
+[2018-10-11 15:20:51]output line from microservice:currency-converter-eur during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:20:51]output line from microservice:currency-converter-eur during executing command:START_SERVERS:all microservers for microservice:currency-converter-eur started correctly
+[2018-10-11 15:20:51]output line from microservice:currency-converter-eur during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (15 milliseconds)
+[2018-10-11 15:20:51]successfully executed command:START_SERVERS on microservice:currency-converter-eur
+[2018-10-11 15:20:51]start sending command:ECHO to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:30000
+[2018-10-11 15:20:51]time remaining to finish operation:ECHO on microservice:currency-converter-eur:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:51]successfully executed command:ECHO on microservice:currency-converter-eur
+[2018-10-11 15:20:51]start sending command:START_APPLICATION_CONTAINER to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:90000
+[2018-10-11 15:20:51]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:currency-converter-eur:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:53]output line from microservice:currency-converter-eur during executing command:START_APPLICATION_CONTAINER:remote service names:[currencyConverterEurService]
+[2018-10-11 15:20:53]output line from microservice:currency-converter-eur during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:2 seconds (2012 milliseconds)
+[2018-10-11 15:20:53]output line from microservice:currency-converter-eur during executing command:START_APPLICATION_CONTAINER:application container for:currency-converter-eur started correctly
+[2018-10-11 15:20:53]output line from microservice:currency-converter-eur during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/currency-converter-eur/currency-converter-eur_system_out_%g.log
+[2018-10-11 15:20:53]successfully executed command:START_APPLICATION_CONTAINER on microservice:currency-converter-eur
+[2018-10-11 15:20:53]start sending command:ECHO to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:30000
+[2018-10-11 15:20:53]time remaining to finish operation:ECHO on microservice:currency-converter-eur:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:53]successfully executed command:ECHO on microservice:currency-converter-eur
+[2018-10-11 15:20:53]start sending command:START_REGISTERED_RESOURCES to microservice:currency-converter-eur linked to address:localhost and port:20058 with timeout:90000
+[2018-10-11 15:20:53]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:currency-converter-eur:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:53]successfully executed command:START_REGISTERED_RESOURCES on microservice:currency-converter-eur
+[2018-10-11 15:20:53]start procedure 'startReadProcessStreams' for microservice:currency-converter-eur
+[2018-10-11 15:20:53]stop procedure 'startReadProcessStreams' for microservice:currency-converter-eur
+[2018-10-11 15:20:53]added configuration to process manager load balancer for process:currency-converter-eur
+[2018-10-11 15:20:53]microservice:currency-converter-chf is new, try start them...
+[2018-10-11 15:20:53]isArchive flag is set to false
+[2018-10-11 15:20:53]already used memory for all running microservices is:671088640 (640.0 megabytes)
+[2018-10-11 15:20:53]this microservice requires in bytes:134217728(128.0 megabytes)
+[2018-10-11 15:20:53]successfully increased used memory for all microservices and now is:805306368 (768.0 megabytes)
+[2018-10-11 15:20:53]init os process for microservice:currency-converter-chf
+[2018-10-11 15:20:53]start sending command:ECHO to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:30000
+[2018-10-11 15:20:53]time remaining to finish operation:ECHO on microservice:currency-converter-chf:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:53]copying microservice:currency-converter-chf files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_currency-converter-chf/temp_1539264033280
+[2018-10-11 15:20:53]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:currency-converter-chf by operating system
+[2018-10-11 15:20:57]init new microservice for microservice:currency-converter-chf is executing now and takes so far:3 seconds (3964 milliseconds)
+[2018-10-11 15:20:57]microservice:currency-converter-chf returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.currency.converter.configuration.CurrencyConverterChfJLupinConfiguration
+produced with success JLupinApplicationContainer:com.example.currency.converter.configuration.CurrencyConverterChfJLupinConfiguration$1
+microservice:currency-converter-chf identity by os microservice id:20250 started correctly
+memory state for local server after start microservice:
+total memory:85.0  megabytes
+free  memory:7.4   megabytes
+used  memory:77.6  megabytes
+max   memory:114.0 megabytes
+microservice identity by os microservice id:20250 for microservice:currency-converter-chf initialized correctly
+[JLPIT]-[PROCESS_ID]20250[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:20:57]start sending command:ECHO to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:30000
+[2018-10-11 15:20:57]time remaining to finish operation:ECHO on microservice:currency-converter-chf:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:57]successfully executed command:ECHO on microservice:currency-converter-chf
+[2018-10-11 15:20:57]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:90000
+[2018-10-11 15:20:57]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:currency-converter-chf:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:57]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:currency-converter-chf
+[2018-10-11 15:20:57]start sending command:ECHO to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:30000
+[2018-10-11 15:20:57]time remaining to finish operation:ECHO on microservice:currency-converter-chf:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:57]successfully executed command:ECHO on microservice:currency-converter-chf
+[2018-10-11 15:20:57]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:90000
+[2018-10-11 15:20:57]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:currency-converter-chf:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:57]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:currency-converter-chf
+[2018-10-11 15:20:57]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:90000
+[2018-10-11 15:20:57]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:currency-converter-chf:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:58]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:currency-converter-chf
+[2018-10-11 15:20:58]start sending command:ECHO to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:30000
+[2018-10-11 15:20:58]time remaining to finish operation:ECHO on microservice:currency-converter-chf:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:58]successfully executed command:ECHO on microservice:currency-converter-chf
+[2018-10-11 15:20:58]start sending command:START_SERVERS to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:90000
+[2018-10-11 15:20:58]time remaining to finish operation:START_SERVERS on microservice:currency-converter-chf:90 seconds (90000 milliseconds)
+[2018-10-11 15:20:58]output line from microservice:currency-converter-chf during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/currency-converter-chf
+[2018-10-11 15:20:58]output line from microservice:currency-converter-chf during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:20:58]output line from microservice:currency-converter-chf during executing command:START_SERVERS:all microservers for microservice:currency-converter-chf started correctly
+[2018-10-11 15:20:58]output line from microservice:currency-converter-chf during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (8 milliseconds)
+[2018-10-11 15:20:58]successfully executed command:START_SERVERS on microservice:currency-converter-chf
+[2018-10-11 15:20:58]start sending command:ECHO to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:30000
+[2018-10-11 15:20:58]time remaining to finish operation:ECHO on microservice:currency-converter-chf:30 seconds (30000 milliseconds)
+[2018-10-11 15:20:58]successfully executed command:ECHO on microservice:currency-converter-chf
+[2018-10-11 15:20:58]start sending command:START_APPLICATION_CONTAINER to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:90000
+[2018-10-11 15:20:58]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:currency-converter-chf:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:00]output line from microservice:currency-converter-chf during executing command:START_APPLICATION_CONTAINER:remote service names:[currencyConverterChfService]
+[2018-10-11 15:21:00]output line from microservice:currency-converter-chf during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:2 seconds (2068 milliseconds)
+[2018-10-11 15:21:00]output line from microservice:currency-converter-chf during executing command:START_APPLICATION_CONTAINER:application container for:currency-converter-chf started correctly
+[2018-10-11 15:21:00]output line from microservice:currency-converter-chf during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/currency-converter-chf/currency-converter-chf_system_out_%g.log
+[2018-10-11 15:21:00]successfully executed command:START_APPLICATION_CONTAINER on microservice:currency-converter-chf
+[2018-10-11 15:21:00]start sending command:ECHO to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:30000
+[2018-10-11 15:21:00]time remaining to finish operation:ECHO on microservice:currency-converter-chf:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:00]successfully executed command:ECHO on microservice:currency-converter-chf
+[2018-10-11 15:21:00]start sending command:START_REGISTERED_RESOURCES to microservice:currency-converter-chf linked to address:localhost and port:20050 with timeout:90000
+[2018-10-11 15:21:00]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:currency-converter-chf:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:00]successfully executed command:START_REGISTERED_RESOURCES on microservice:currency-converter-chf
+[2018-10-11 15:21:00]start procedure 'startReadProcessStreams' for microservice:currency-converter-chf
+[2018-10-11 15:21:00]stop procedure 'startReadProcessStreams' for microservice:currency-converter-chf
+[2018-10-11 15:21:00]added configuration to process manager load balancer for process:currency-converter-chf
+[2018-10-11 15:21:00]microservice:http-session-repository is new, try start them...
+[2018-10-11 15:21:00]isArchive flag is set to false
+[2018-10-11 15:21:00]already used memory for all running microservices is:805306368 (768.0 megabytes)
+[2018-10-11 15:21:00]this microservice requires in bytes:536870912(512.0 megabytes)
+[2018-10-11 15:21:00]successfully increased used memory for all microservices and now is:1342177280 (1.3 gigabytes)
+[2018-10-11 15:21:00]init os process for microservice:http-session-repository
+[2018-10-11 15:21:00]start sending command:ECHO to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:30000
+[2018-10-11 15:21:00]time remaining to finish operation:ECHO on microservice:http-session-repository:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:00]copying microservice:http-session-repository files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_http-session-repository/temp_1539264033296
+[2018-10-11 15:21:00]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:http-session-repository by operating system
+[2018-10-11 15:21:04]init new microservice for microservice:http-session-repository is executing now and takes so far:4 seconds (4075 milliseconds)
+[2018-10-11 15:21:04]microservice:http-session-repository returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.jlupin.impl.microservice.partofjlupin.httpsessionrepository.configuration.HttpSessionRepositoryJLupinConfiguration
+produced with success JLupinApplicationContainer:com.jlupin.impl.microservice.partofjlupin.httpsessionrepository.configuration.HttpSessionRepositoryJLupinConfiguration$1
+microservice:http-session-repository identity by os microservice id:20320 started correctly
+memory state for local server after start microservice:
+total memory:256.5 megabytes
+free  memory:105.3 megabytes
+used  memory:151.2 megabytes
+max   memory:455.5 megabytes
+microservice identity by os microservice id:20320 for microservice:http-session-repository initialized correctly
+[JLPIT]-[PROCESS_ID]20320[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:04]start sending command:ECHO to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:30000
+[2018-10-11 15:21:04]time remaining to finish operation:ECHO on microservice:http-session-repository:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:04]successfully executed command:ECHO on microservice:http-session-repository
+[2018-10-11 15:21:04]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:90000
+[2018-10-11 15:21:04]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:http-session-repository:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:04]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:http-session-repository
+[2018-10-11 15:21:04]start sending command:ECHO to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:30000
+[2018-10-11 15:21:04]time remaining to finish operation:ECHO on microservice:http-session-repository:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:05]successfully executed command:ECHO on microservice:http-session-repository
+[2018-10-11 15:21:05]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:90000
+[2018-10-11 15:21:05]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:http-session-repository:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:05]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:http-session-repository
+[2018-10-11 15:21:05]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:90000
+[2018-10-11 15:21:05]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:http-session-repository:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:05]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:http-session-repository
+[2018-10-11 15:21:05]start sending command:ECHO to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:30000
+[2018-10-11 15:21:05]time remaining to finish operation:ECHO on microservice:http-session-repository:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:05]successfully executed command:ECHO on microservice:http-session-repository
+[2018-10-11 15:21:05]start sending command:START_SERVERS to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:90000
+[2018-10-11 15:21:05]time remaining to finish operation:START_SERVERS on microservice:http-session-repository:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:05]output line from microservice:http-session-repository during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/http-session-repository
+[2018-10-11 15:21:05]output line from microservice:http-session-repository during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:05]output line from microservice:http-session-repository during executing command:START_SERVERS:all microservers for microservice:http-session-repository started correctly
+[2018-10-11 15:21:05]output line from microservice:http-session-repository during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-10-11 15:21:05]successfully executed command:START_SERVERS on microservice:http-session-repository
+[2018-10-11 15:21:05]start sending command:ECHO to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:30000
+[2018-10-11 15:21:05]time remaining to finish operation:ECHO on microservice:http-session-repository:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:05]successfully executed command:ECHO on microservice:http-session-repository
+[2018-10-11 15:21:05]start sending command:START_APPLICATION_CONTAINER to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:90000
+[2018-10-11 15:21:05]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:http-session-repository:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:07]output line from microservice:http-session-repository during executing command:START_APPLICATION_CONTAINER:remote service names:[httpSessionRepositorySpringConfiguration, httpSessionRepository]
+[2018-10-11 15:21:07]output line from microservice:http-session-repository during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:1 seconds (1812 milliseconds)
+[2018-10-11 15:21:07]output line from microservice:http-session-repository during executing command:START_APPLICATION_CONTAINER:application container for:http-session-repository started correctly
+[2018-10-11 15:21:07]output line from microservice:http-session-repository during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/http-session-repository/http-session-repository_system_out_%g.log
+[2018-10-11 15:21:07]successfully executed command:START_APPLICATION_CONTAINER on microservice:http-session-repository
+[2018-10-11 15:21:07]start sending command:ECHO to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:30000
+[2018-10-11 15:21:07]time remaining to finish operation:ECHO on microservice:http-session-repository:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:07]successfully executed command:ECHO on microservice:http-session-repository
+[2018-10-11 15:21:07]start sending command:START_REGISTERED_RESOURCES to microservice:http-session-repository linked to address:localhost and port:20042 with timeout:90000
+[2018-10-11 15:21:07]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:http-session-repository:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:07]successfully executed command:START_REGISTERED_RESOURCES on microservice:http-session-repository
+[2018-10-11 15:21:07]start procedure 'startReadProcessStreams' for microservice:http-session-repository
+[2018-10-11 15:21:07]stop procedure 'startReadProcessStreams' for microservice:http-session-repository
+[2018-10-11 15:21:07]added configuration to process manager load balancer for process:http-session-repository
+[2018-10-11 15:21:07]microservice:currency-converter-gbp is new, try start them...
+[2018-10-11 15:21:07]isArchive flag is set to false
+[2018-10-11 15:21:07]already used memory for all running microservices is:1342177280 (1.3 gigabytes)
+[2018-10-11 15:21:07]this microservice requires in bytes:134217728(128.0 megabytes)
+[2018-10-11 15:21:07]successfully increased used memory for all microservices and now is:1476395008 (1.4 gigabytes)
+[2018-10-11 15:21:07]init os process for microservice:currency-converter-gbp
+[2018-10-11 15:21:07]start sending command:ECHO to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:30000
+[2018-10-11 15:21:07]copying microservice:currency-converter-gbp files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_currency-converter-gbp/temp_1539264033335
+[2018-10-11 15:21:07]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:currency-converter-gbp by operating system
+[2018-10-11 15:21:11]init new microservice for microservice:currency-converter-gbp is executing now and takes so far:3 seconds (3995 milliseconds)
+[2018-10-11 15:21:11]microservice:currency-converter-gbp returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.currency.converter.configuration.CurrencyConverterGbpJLupinConfiguration
+produced with success JLupinApplicationContainer:com.example.currency.converter.configuration.CurrencyConverterGbpJLupinConfiguration$1
+microservice:currency-converter-gbp identity by os microservice id:20386 started correctly
+memory state for local server after start microservice:
+total memory:86.5  megabytes
+free  memory:8.8   megabytes
+used  memory:77.7  megabytes
+max   memory:114.0 megabytes
+microservice identity by os microservice id:20386 for microservice:currency-converter-gbp initialized correctly
+[JLPIT]-[PROCESS_ID]20386[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:11]start sending command:ECHO to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:30000
+[2018-10-11 15:21:11]time remaining to finish operation:ECHO on microservice:currency-converter-gbp:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:ECHO on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:90000
+[2018-10-11 15:21:11]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:currency-converter-gbp:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:ECHO to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:30000
+[2018-10-11 15:21:11]time remaining to finish operation:ECHO on microservice:currency-converter-gbp:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:ECHO on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:90000
+[2018-10-11 15:21:11]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:currency-converter-gbp:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:90000
+[2018-10-11 15:21:11]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:currency-converter-gbp:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:ECHO to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:30000
+[2018-10-11 15:21:11]time remaining to finish operation:ECHO on microservice:currency-converter-gbp:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:ECHO on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:START_SERVERS to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:90000
+[2018-10-11 15:21:11]time remaining to finish operation:START_SERVERS on microservice:currency-converter-gbp:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:11]output line from microservice:currency-converter-gbp during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/currency-converter-gbp
+[2018-10-11 15:21:11]output line from microservice:currency-converter-gbp during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:11]output line from microservice:currency-converter-gbp during executing command:START_SERVERS:all microservers for microservice:currency-converter-gbp started correctly
+[2018-10-11 15:21:11]output line from microservice:currency-converter-gbp during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (7 milliseconds)
+[2018-10-11 15:21:11]successfully executed command:START_SERVERS on microservice:currency-converter-gbp
+[2018-10-11 15:21:11]start sending command:ECHO to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:30000
+[2018-10-11 15:21:11]time remaining to finish operation:ECHO on microservice:currency-converter-gbp:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:12]successfully executed command:ECHO on microservice:currency-converter-gbp
+[2018-10-11 15:21:12]start sending command:START_APPLICATION_CONTAINER to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:90000
+[2018-10-11 15:21:12]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:currency-converter-gbp:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:14]output line from microservice:currency-converter-gbp during executing command:START_APPLICATION_CONTAINER:remote service names:[currencyConverterGbpService]
+[2018-10-11 15:21:14]output line from microservice:currency-converter-gbp during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:2 seconds (2157 milliseconds)
+[2018-10-11 15:21:14]output line from microservice:currency-converter-gbp during executing command:START_APPLICATION_CONTAINER:application container for:currency-converter-gbp started correctly
+[2018-10-11 15:21:14]output line from microservice:currency-converter-gbp during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/currency-converter-gbp/currency-converter-gbp_system_out_%g.log
+[2018-10-11 15:21:14]successfully executed command:START_APPLICATION_CONTAINER on microservice:currency-converter-gbp
+[2018-10-11 15:21:14]start sending command:ECHO to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:30000
+[2018-10-11 15:21:14]time remaining to finish operation:ECHO on microservice:currency-converter-gbp:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:14]successfully executed command:ECHO on microservice:currency-converter-gbp
+[2018-10-11 15:21:14]start sending command:START_REGISTERED_RESOURCES to microservice:currency-converter-gbp linked to address:localhost and port:20034 with timeout:90000
+[2018-10-11 15:21:14]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:currency-converter-gbp:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:14]successfully executed command:START_REGISTERED_RESOURCES on microservice:currency-converter-gbp
+[2018-10-11 15:21:14]start procedure 'startReadProcessStreams' for microservice:currency-converter-gbp
+[2018-10-11 15:21:14]stop procedure 'startReadProcessStreams' for microservice:currency-converter-gbp
+[2018-10-11 15:21:14]added configuration to process manager load balancer for process:currency-converter-gbp
+[2018-10-11 15:21:14]microservice:exchange is new, try start them...
+[2018-10-11 15:21:14]isArchive flag is set to false
+[2018-10-11 15:21:14]already used memory for all running microservices is:1476395008 (1.4 gigabytes)
+[2018-10-11 15:21:14]this microservice requires in bytes:201326592(192.0 megabytes)
+[2018-10-11 15:21:14]successfully increased used memory for all microservices and now is:1677721600 (1.6 gigabytes)
+[2018-10-11 15:21:14]init os process for microservice:exchange
+[2018-10-11 15:21:14]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:14]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:14]copying microservice:exchange files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_exchange/temp_1539264033323
+[2018-10-11 15:21:14]adding to classpath microservice:exchange files from temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_exchange/temp_1539264033323
+[2018-10-11 15:21:14]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:exchange by operating system
+[2018-10-11 15:21:18]init new microservice for microservice:exchange is executing now and takes so far:3 seconds (3975 milliseconds)
+[2018-10-11 15:21:18]microservice:exchange returns init microservice information:
+microservice:exchange identity by os microservice id:20446 started correctly
+memory state for local server after start microservice:
+total memory:178.5 megabytes
+free  memory:80.9  megabytes
+used  memory:97.6  megabytes
+max   memory:178.5 megabytes
+microservice identity by os microservice id:20446 for microservice:exchange initialized correctly
+[JLPIT]-[PROCESS_ID]20446[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:18]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:18]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:18]successfully executed command:ECHO on microservice:exchange
+[2018-10-11 15:21:18]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:exchange linked to address:localhost and port:20026 with timeout:90000
+[2018-10-11 15:21:18]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:exchange:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:18]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:exchange
+[2018-10-11 15:21:18]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:18]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:18]successfully executed command:ECHO on microservice:exchange
+[2018-10-11 15:21:18]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:exchange linked to address:localhost and port:20026 with timeout:90000
+[2018-10-11 15:21:18]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:exchange:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:19]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:exchange
+[2018-10-11 15:21:19]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:19]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:19]successfully executed command:ECHO on microservice:exchange
+[2018-10-11 15:21:19]start sending command:START_SERVERS to microservice:exchange linked to address:localhost and port:20026 with timeout:90000
+[2018-10-11 15:21:19]time remaining to finish operation:START_SERVERS on microservice:exchange:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:19]output line from microservice:exchange during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/exchange
+[2018-10-11 15:21:19]output line from microservice:exchange during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS:
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS:  .   ____          _            __ _ _
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS: /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS:( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS: \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS:  '  |____| .__|_| |_|_| |_\__, | / / / /
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS: =========|_|==============|___/=/_/_/_/
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS: :: Spring Boot ::        (v1.5.2.RELEASE)
+[2018-10-11 15:21:20]output line from microservice:exchange during executing command:START_SERVERS:
+[2018-10-11 15:21:24]output line from microservice:exchange during executing command:START_SERVERS:computed jdkVersion variable:8
+[2018-10-11 15:21:24]output line from microservice:exchange during executing command:START_SERVERS:all microservers for microservice:exchange started correctly
+[2018-10-11 15:21:24]output line from microservice:exchange during executing command:START_SERVERS:servers are starting now and this operation takes so far:5 seconds (5363 milliseconds)
+[2018-10-11 15:21:24]successfully executed command:START_SERVERS on microservice:exchange
+[2018-10-11 15:21:24]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:24]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:24]successfully executed command:ECHO on microservice:exchange
+[2018-10-11 15:21:24]start sending command:GET_MICROSERVICE_SYSTEM_PROPERTIES to microservice:exchange linked to address:localhost and port:20026 with timeout:90000
+[2018-10-11 15:21:24]time remaining to finish operation:GET_MICROSERVICE_SYSTEM_PROPERTIES on microservice:exchange:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:24]successfully executed command:GET_MICROSERVICE_SYSTEM_PROPERTIES on microservice:exchange
+[2018-10-11 15:21:24]established servlet context path:/exchange
+[2018-10-11 15:21:24]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:24]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:24]successfully executed command:ECHO on microservice:exchange
+[2018-10-11 15:21:24]start sending command:START_REGISTERED_RESOURCES to microservice:exchange linked to address:localhost and port:20026 with timeout:90000
+[2018-10-11 15:21:24]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:exchange:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:24]successfully executed command:START_REGISTERED_RESOURCES on microservice:exchange
+[2018-10-11 15:21:24]start sending command:ECHO to microservice:exchange linked to address:localhost and port:20026 with timeout:30000
+[2018-10-11 15:21:24]time remaining to finish operation:ECHO on microservice:exchange:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:25]successfully executed command:ECHO on microservice:exchange
+[2018-10-11 15:21:25]start sending command:REDIRECT_SYSTEM_OUT_AND_ERR to microservice:exchange linked to address:localhost and port:20026 with timeout:90000
+[2018-10-11 15:21:25]time remaining to finish operation:REDIRECT_SYSTEM_OUT_AND_ERR on microservice:exchange:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:25]output line from microservice:exchange during executing command:REDIRECT_SYSTEM_OUT_AND_ERR:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/exchange/exchange_system_out_%g.log
+[2018-10-11 15:21:25]successfully executed command:REDIRECT_SYSTEM_OUT_AND_ERR on microservice:exchange
+[2018-10-11 15:21:25]start procedure 'startReadProcessStreams' for microservice:exchange
+[2018-10-11 15:21:25]stop procedure 'startReadProcessStreams' for microservice:exchange
+[2018-10-11 15:21:25]added configuration to process manager load balancer for process:exchange
+[2018-10-11 15:21:25]microservice:exchange-rates is new, try start them...
+[2018-10-11 15:21:25]isArchive flag is set to false
+[2018-10-11 15:21:25]already used memory for all running microservices is:1677721600 (1.6 gigabytes)
+[2018-10-11 15:21:25]this microservice requires in bytes:134217728(128.0 megabytes)
+[2018-10-11 15:21:25]successfully increased used memory for all microservices and now is:1811939328 (1.7 gigabytes)
+[2018-10-11 15:21:25]init os process for microservice:exchange-rates
+[2018-10-11 15:21:25]start sending command:ECHO to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:30000
+[2018-10-11 15:21:25]time remaining to finish operation:ECHO on microservice:exchange-rates:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:25]copying microservice:exchange-rates files to temp classpath:/home/piotr/IdeaProjects/exchange-project/platform/start/temp/temp_exchange-rates/temp_1539264033119
+[2018-10-11 15:21:25]now main microservice is waiting:90000 milliseconds for each microservice input stream (standard, error) to initialize microservice microservice:exchange-rates by operating system
+[2018-10-11 15:21:29]init new microservice for microservice:exchange-rates is executing now and takes so far:4 seconds (4122 milliseconds)
+[2018-10-11 15:21:29]microservice:exchange-rates returns init microservice information:
+found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.currency.converter.configuration.ExchangeRatesJLupinConfiguration
+produced with success JLupinApplicationContainer:com.example.currency.converter.configuration.ExchangeRatesJLupinConfiguration$1
+microservice:exchange-rates identity by os microservice id:20511 started correctly
+memory state for local server after start microservice:
+total memory:117.5 megabytes
+free  memory:48.7  megabytes
+used  memory:68.8  megabytes
+max   memory:117.5 megabytes
+microservice identity by os microservice id:20511 for microservice:exchange-rates initialized correctly
+[JLPIT]-[PROCESS_ID]20511[/PROCESS_ID]-[/JLPIT]
+[JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:29]start sending command:ECHO to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:30000
+[2018-10-11 15:21:29]time remaining to finish operation:ECHO on microservice:exchange-rates:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:ECHO on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:90000
+[2018-10-11 15:21:29]time remaining to finish operation:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:exchange-rates:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:UPDATE_MAIN_SERVER_IN_ZONE_CONFIGURATIONS_ON_SYSTEM_CONTAINER on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:ECHO to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:30000
+[2018-10-11 15:21:29]time remaining to finish operation:ECHO on microservice:exchange-rates:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:ECHO on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:90000
+[2018-10-11 15:21:29]time remaining to finish operation:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:exchange-rates:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:UPDATE_MAIN_SERVER_NAME_ON_SYSTEM_CONTAINER on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:90000
+[2018-10-11 15:21:29]time remaining to finish operation:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:exchange-rates:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:ADD_ADDTIONAL_INFORMATION_TO_MICROSERVICE_CONFIGURATION_FROM_MAIN_SERVER on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:ECHO to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:30000
+[2018-10-11 15:21:29]time remaining to finish operation:ECHO on microservice:exchange-rates:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:ECHO on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:START_SERVERS to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:90000
+[2018-10-11 15:21:29]time remaining to finish operation:START_SERVERS on microservice:exchange-rates:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:29]output line from microservice:exchange-rates during executing command:START_SERVERS:user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/exchange-rates
+[2018-10-11 15:21:29]output line from microservice:exchange-rates during executing command:START_SERVERS:temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:29]output line from microservice:exchange-rates during executing command:START_SERVERS:all microservers for microservice:exchange-rates started correctly
+[2018-10-11 15:21:29]output line from microservice:exchange-rates during executing command:START_SERVERS:servers are starting now and this operation takes so far:0 seconds (7 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:START_SERVERS on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:ECHO to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:30000
+[2018-10-11 15:21:29]time remaining to finish operation:ECHO on microservice:exchange-rates:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:29]successfully executed command:ECHO on microservice:exchange-rates
+[2018-10-11 15:21:29]start sending command:START_APPLICATION_CONTAINER to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:90000
+[2018-10-11 15:21:29]time remaining to finish operation:START_APPLICATION_CONTAINER on microservice:exchange-rates:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:31]output line from microservice:exchange-rates during executing command:START_APPLICATION_CONTAINER:remote service names:[exchangeRatesService]
+[2018-10-11 15:21:31]output line from microservice:exchange-rates during executing command:START_APPLICATION_CONTAINER:application container is loading now and this operation takes so far:1 seconds (1971 milliseconds)
+[2018-10-11 15:21:31]output line from microservice:exchange-rates during executing command:START_APPLICATION_CONTAINER:application container for:exchange-rates started correctly
+[2018-10-11 15:21:31]output line from microservice:exchange-rates during executing command:START_APPLICATION_CONTAINER:System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/exchange-rates/exchange-rates_system_out_%g.log
+[2018-10-11 15:21:31]successfully executed command:START_APPLICATION_CONTAINER on microservice:exchange-rates
+[2018-10-11 15:21:31]start sending command:ECHO to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:30000
+[2018-10-11 15:21:31]time remaining to finish operation:ECHO on microservice:exchange-rates:30 seconds (30000 milliseconds)
+[2018-10-11 15:21:31]successfully executed command:ECHO on microservice:exchange-rates
+[2018-10-11 15:21:31]start sending command:START_REGISTERED_RESOURCES to microservice:exchange-rates linked to address:localhost and port:20012 with timeout:90000
+[2018-10-11 15:21:31]time remaining to finish operation:START_REGISTERED_RESOURCES on microservice:exchange-rates:90 seconds (90000 milliseconds)
+[2018-10-11 15:21:32]successfully executed command:START_REGISTERED_RESOURCES on microservice:exchange-rates
+[2018-10-11 15:21:32]start procedure 'startReadProcessStreams' for microservice:exchange-rates
+[2018-10-11 15:21:32]stop procedure 'startReadProcessStreams' for microservice:exchange-rates
+[2018-10-11 15:21:32]added configuration to process manager load balancer for process:exchange-rates
+[2018-10-11 15:21:32]lock by type:MICROSERVICE_OS_PROCESS_MANIPULATION is unlock by operation:START
+[2018-10-11 15:21:32]lock by type:MICROSERVICE_HEALTH_CHECK is unlock by operation:START
+[2018-10-11 15:21:32]JMX manager started
+[2018-10-11 15:21:32]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is lock by operation:SELF_START
+[2018-10-11 15:21:32]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is lock by operation:SELF_START
+[2018-10-11 15:21:32]found class executor to load technical process executor:NGINX - class com.jlupin.impl.manager.technicalprocess.executor.impl.nginx.JLupinNginxLinuxTechnicalProcessExecutorImpl
+[2018-10-11 15:21:32]nginx pid does not exists in file, and it seems it is not turn on, so let`s start them
+[2018-10-11 15:21:32]start executing NGINX command:start for:LINUX
+[2018-10-11 15:21:32]technical process:nginx not started correctly, caused by:
+[2018-10-11 15:21:32]com.jlupin.impl.manager.technicalprocess.executor.exception.JLupinTechnicalProcessExecutorException: can not execute start sequence on windows nginx caused by:
+[2018-10-11 15:21:32]	at com.jlupin.impl.manager.technicalprocess.executor.impl.nginx.base.JLupinBaseNginxTechnicalProcessExecutor.startSequence(JLupinBaseNginxTechnicalProcessExecutor.java:162)
+[2018-10-11 15:21:32]	at com.jlupin.impl.manager.technicalprocess.JLupinTechnicalProcessManagerImpl.start(JLupinTechnicalProcessManagerImpl.java:73)
+[2018-10-11 15:21:32]	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:158)
+[2018-10-11 15:21:32]	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:126)
+[2018-10-11 15:21:32]	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:67)
+[2018-10-11 15:21:32]	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:40)
+[2018-10-11 15:21:32]	at com.jlupin.starter.main.start.JLupinMainServerStarter.start(JLupinMainServerStarter.java:90)
+[2018-10-11 15:21:32]	at com.jlupin.starter.main.init.JLupinMainServerInitializer.main(JLupinMainServerInitializer.java:49)
+[2018-10-11 15:21:32]Caused by: com.jlupin.impl.manager.technicalprocess.executor.exception.JLupinTechnicalProcessExecutorException: can not executing NGINX command:start for:LINUX caused by:
+[2018-10-11 15:21:32]	at com.jlupin.impl.manager.technicalprocess.executor.base.JLupinBaseTechnicalProcessExecutor.executeCommandInternal(JLupinBaseTechnicalProcessExecutor.java:57)
+[2018-10-11 15:21:32]	at com.jlupin.impl.manager.technicalprocess.executor.impl.nginx.base.JLupinBaseNginxTechnicalProcessExecutor.startSequence(JLupinBaseNginxTechnicalProcessExecutor.java:123)
+[2018-10-11 15:21:32]	... 7 more
+[2018-10-11 15:21:32]Caused by: com.jlupin.impl.util.process.exception.JLupinProcessUtilException: can not execute command:bin/start.sh caused by:
+[2018-10-11 15:21:32]	at com.jlupin.impl.util.process.JLupinProcessUtil.executeOuterProcessAndLeaveOpenedStreams(JLupinProcessUtil.java:142)
+[2018-10-11 15:21:32]	at com.jlupin.impl.manager.technicalprocess.executor.base.JLupinBaseTechnicalProcessExecutor.executeCommandInternal(JLupinBaseTechnicalProcessExecutor.java:42)
+[2018-10-11 15:21:32]	... 8 more
+[2018-10-11 15:21:32]Caused by: java.io.IOException: Cannot run program "/home/piotr/IdeaProjects/exchange-project/platform/technical/nginx/linux/bin/start.sh" (in directory "/home/piotr/IdeaProjects/exchange-project/platform/technical/nginx/linux"): error=13, Brak dostępu
+[2018-10-11 15:21:32]	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+[2018-10-11 15:21:32]	at com.jlupin.impl.util.process.JLupinProcessUtil.executeOuterProcessAndLeaveOpenedStreams(JLupinProcessUtil.java:93)
+[2018-10-11 15:21:32]	... 9 more
+[2018-10-11 15:21:32]Caused by: java.io.IOException: error=13, Brak dostępu
+[2018-10-11 15:21:32]	at java.lang.UNIXProcess.forkAndExec(Native Method)
+[2018-10-11 15:21:32]	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+[2018-10-11 15:21:32]	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+[2018-10-11 15:21:32]	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+[2018-10-11 15:21:32]	... 10 more
+[2018-10-11 15:21:32]lock by type:TECHNICAL_OS_PROCESS_MANIPULATION is unlock by operation:SELF_START
+[2018-10-11 15:21:32]lock by type:TECHNICAL_PROCESS_HEALTH_CHECK is unlock by operation:SELF_START
+[2018-10-11 15:21:32]
+there is currently no active technical processes
+[2018-10-11 15:21:32]
+ --------------------------------------------------------------
+|RUNNING MICROSERVICES:                                       |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:queueMicroservice                          |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20000                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20002                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20004                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20115                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:exchange-rates                             |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20008                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20010                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20012                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20511                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:channelMicroservice                        |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20016                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20018                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20020                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20053                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:currency-converter-gbp                     |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20030                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20032                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20034                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20386                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:exchange                                   |
+ --------------------------------------------------------------
+|TYPE:SERVLET                                                 |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:HTTP  - PORT:20024                         |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20026                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20446                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:http-session-repository                    |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20038                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20040                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20042                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20320                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:currency-converter-chf                     |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20046                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20048                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20050                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20250                                             |
+ --------------------------------------------------------------
+
+ --------------------------------------------------------------
+|MICROSERVICE SUMMARY:                                        |
+ --------------------------------------------------------------
+|MICROSERVICE NAME:currency-converter-eur                     |
+ --------------------------------------------------------------
+|TYPE:NATIVE                                                  |
+ --------------------------------------------------------------
+|SERVICE PORT TYPE:JLRMC - PORT:20054                         |
+ --------------------------------------------------------------
+|QUEUE PORT:20056                                             |
+ --------------------------------------------------------------
+|TRANSMISSION PORT:20058                                      |
+ --------------------------------------------------------------
+|PROCESS ID:20184                                             |
+ --------------------------------------------------------------
+
+
+[2018-10-11 15:21:32] 
+ --------------------------------------------------------------
+|RUNNING SERVERS SUMMARY                                       |
+ --------------------------------------------------------------
+|NAME                                          |PORT           |
+ --------------------------------------------------------------
+|JLRMC                                         |9090           |
+ --------------------------------------------------------------
+|ELASTIC_HTTP                                  |8082           |
+ --------------------------------------------------------------
+|QUEUE                                         |9095           |
+ --------------------------------------------------------------
+|TRANSMISSION                                  |9096           |
+ --------------------------------------------------------------
+|INFORMATION                                   |9097           |
+ --------------------------------------------------------------
+|INFORMATION_HTTP                              |9098           |
+ --------------------------------------------------------------
+
+[2018-10-11 15:21:32]JLupin Platform initialized correctly in:63781 milliseconds, process id:19995

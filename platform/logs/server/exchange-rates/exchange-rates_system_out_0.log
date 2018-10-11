@@ -1,0 +1,38 @@
+[2018-10-11 15:21:28]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.currency.converter.configuration.ExchangeRatesJLupinConfiguration
+[2018-10-11 15:21:28]produced with success JLupinApplicationContainer:com.example.currency.converter.configuration.ExchangeRatesJLupinConfiguration$1
+[2018-10-11 15:21:29]microservice:exchange-rates identity by os microservice id:20511 started correctly
+[2018-10-11 15:21:29]memory state for local server after start microservice:
+total memory:117.5 megabytes
+free  memory:48.7  megabytes
+used  memory:68.8  megabytes
+max   memory:117.5 megabytes
+[2018-10-11 15:21:29]microservice identity by os microservice id:20511 for microservice:exchange-rates initialized correctly
+[2018-10-11 15:21:29][JLPIT]-[PROCESS_ID]20511[/PROCESS_ID]-[/JLPIT]
+[2018-10-11 15:21:29][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-10-11 15:21:29][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:29]user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/exchange-rates
+[2018-10-11 15:21:29]temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:29]all microservers for microservice:exchange-rates started correctly
+[2018-10-11 15:21:29]servers are starting now and this operation takes so far:0 seconds (7 milliseconds)
+[2018-10-11 15:21:31]application container is loading now and this operation takes so far:1 seconds (1971 milliseconds)
+[2018-10-11 15:21:31]application container for:exchange-rates started correctly
+[2018-10-11 15:21:31]System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/exchange-rates/exchange-rates_system_out_%g.log
+[2018-10-11 15:21:50]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.exchange.configuration.ExchangeRatesJLupinConfiguration
+[2018-10-11 15:21:50]produced with success JLupinApplicationContainer:com.example.exchange.configuration.ExchangeRatesJLupinConfiguration$1
+[2018-10-11 15:21:51]microservice:exchange-rates identity by os microservice id:20613 started correctly
+[2018-10-11 15:21:51]memory state for local server after start microservice:
+total memory:147.5 megabytes
+free  memory:50.7  megabytes
+used  memory:96.8  megabytes
+max   memory:228.0 megabytes
+[2018-10-11 15:21:51]microservice identity by os microservice id:20613 for microservice:exchange-rates initialized correctly
+[2018-10-11 15:21:51][JLPIT]-[PROCESS_ID]20613[/PROCESS_ID]-[/JLPIT]
+[2018-10-11 15:21:51][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-10-11 15:21:51][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:51]user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/exchange-rates
+[2018-10-11 15:21:51]temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:51]all microservers for microservice:exchange-rates started correctly
+[2018-10-11 15:21:51]servers are starting now and this operation takes so far:0 seconds (8 milliseconds)
+[2018-10-11 15:21:53]application container is loading now and this operation takes so far:1 seconds (1958 milliseconds)
+[2018-10-11 15:21:53]application container for:exchange-rates started correctly
+[2018-10-11 15:21:53]System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/exchange-rates/exchange-rates_system_out_%g.log

@@ -1,0 +1,184 @@
+2018-10-11 15:21:29,506 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:TRANSMISSION thread pool size is:8
+2018-10-11 15:21:29,518 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:29,518 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:29,525 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:29,525 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:TRANSMISSION socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20012]
+2018-10-11 15:21:29,526 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 43690
+2018-10-11 15:21:29,529 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:TRANSMISSION start listen correctly
+2018-10-11 15:21:29,855 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:JLRMC thread pool size is:128
+2018-10-11 15:21:29,855 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:JLRMC - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:29,855 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:JLRMC - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:29,857 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:29,858 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:JLRMC socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20008]
+2018-10-11 15:21:29,858 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 1152
+2018-10-11 15:21:29,858 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:JLRMC start listen correctly
+2018-10-11 15:21:29,859 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:QUEUE thread pool size is:128
+2018-10-11 15:21:29,859 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:QUEUE - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:29,859 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:QUEUE - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:29,859 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:29,860 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:QUEUE socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20010]
+2018-10-11 15:21:29,860 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 1152
+2018-10-11 15:21:29,860 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:QUEUE start listen correctly
+2018-10-11 15:21:30,347 INFO  [org.springframework.context.annotation.AnnotationConfigApplicationContext] (pool-6-thread-1) Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d4aa2ed: startup date [Thu Oct 11 15:21:30 CEST 2018]; root of context hierarchy
+2018-10-11 15:21:31,182 INFO  [com.jlupin.impl.container.application.spring.JLupinAbstractSpringApplicationContainer] (pool-6-thread-1) MESSAGE ID:3 METHOD:load LINE:95 LOG:load application factory:org.springframework.context.annotation.AnnotationConfigApplicationContext@4d4aa2ed: startup date [Thu Oct 11 15:21:30 CEST 2018]; root of context hierarchy
+2018-10-11 15:21:31,929 INFO  [com.jlupin.impl.container.application.spring.JLupinAbstractSpringApplicationContainer] (pool-6-thread-1) MESSAGE ID:35 METHOD:load LINE:153 LOG:application factory:org.springframework.context.annotation.AnnotationConfigApplicationContext@4d4aa2ed: startup date [Thu Oct 11 15:21:30 CEST 2018]; root of context hierarchy started correctly
+2018-10-11 15:21:32,176 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-6-thread-3) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.entrypoint.microservice.queue.JLupinQueueMicroserviceEntryPointImpl;start;78
+com.jlupin.command.executor.microservice.loadstrategy.impl.jnative.JLupinMicroserviceNativeLoadStrategyImpl;loadConfigurationAndStart;119
+com.jlupin.command.executor.microservice.loadstrategy.impl.base.JLupinBaseMicroserviceLoadStategyImpl;loadConfigurationAndStartServers;34
+com.jlupin.command.executor.microservice.loadstrategy.manager.JLupinMicroserviceLoadStrategyManager;loadAndStartConfiguration;38
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;loadConfigurationAndStartServers;83
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;38
+com.jlupin.starter.microservice.start.JLupinMicroserviceStarter;start;67
+com.jlupin.starter.microservice.init.JLupinMicroserviceInitializer;main;59
+started correctly
+2018-10-11 15:21:32,222 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-6-thread-3) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.client.util.JLupinClientUtil;generateLoadBalancer;63
+com.jlupin.impl.client.util.JLupinClientUtil;generateInnerMicroserviceLoadBalancerDelegator;119
+com.example.currency.converter.configuration.ExchangeRatesSpringConfiguration;getJLupinDelegator;21
+com.example.currency.converter.configuration.ExchangeRatesSpringConfiguration$$EnhancerBySpringCGLIB$$9bf530bf;CGLIB$getJLupinDelegator$0;-1
+com.example.currency.converter.configuration.ExchangeRatesSpringConfiguration$$EnhancerBySpringCGLIB$$9bf530bf$$FastClassBySpringCGLIB$$17c10847;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.currency.converter.configuration.ExchangeRatesSpringConfiguration$$EnhancerBySpringCGLIB$$9bf530bf;getJLupinDelegator;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;154
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;582
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1247
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1096
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;535
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;495
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;222
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.beans.factory.support.DefaultListableBeanFactory;preInstantiateSingletons;759
+org.springframework.context.support.AbstractApplicationContext;finishBeanFactoryInitialization;869
+org.springframework.context.support.AbstractApplicationContext;refresh;550
+org.springframework.context.annotation.AnnotationConfigApplicationContext;<init>;88
+com.example.currency.converter.configuration.ExchangeRatesJLupinConfiguration$1;getAbstractApplicationContext;19
+com.jlupin.impl.container.application.spring.JLupinAbstractSpringApplicationContainer;load;84
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;startApplicationContainer;185
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;48
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartApplicationContainerFunctionImpl;doCommand;18
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartApplicationContainerFunctionImpl;doCommand;12
+com.jlupin.command.interpreter.transmission.microservice.JLupinMicroserviceTransmissionCommandInterpreter;doCommand;63
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl$1;executingInputAndGetOutputAsByteArrayWithPrintStreaming;35
+com.jlupin.impl.util.communication.protocol.transmission.JLupinCommunicationTransmissionProtocolUtil;receivedAndSendObjectWithPrintStreamingByOpenedSocketWithItsClosing;54
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl;doEntry;25
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;204
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;185
+java.util.concurrent.FutureTask;run;266
+java.util.concurrent.ThreadPoolExecutor;runWorker;1149
+java.util.concurrent.ThreadPoolExecutor$Worker;run;624
+java.lang.Thread;run;748
+started correctly
+2018-10-11 15:21:51,386 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:TRANSMISSION thread pool size is:8
+2018-10-11 15:21:51,398 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:51,398 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (main) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:TRANSMISSION - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:51,403 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:51,404 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:TRANSMISSION socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20012]
+2018-10-11 15:21:51,404 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 43690
+2018-10-11 15:21:51,406 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (main) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:TRANSMISSION start listen correctly
+2018-10-11 15:21:51,731 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:JLRMC thread pool size is:128
+2018-10-11 15:21:51,731 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:JLRMC - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:51,731 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:JLRMC - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:51,734 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:51,734 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:JLRMC socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20008]
+2018-10-11 15:21:51,734 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 1152
+2018-10-11 15:21:51,735 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:JLRMC start listen correctly
+2018-10-11 15:21:51,735 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:32 METHOD:start LINE:117 LOG:server name:QUEUE thread pool size is:128
+2018-10-11 15:21:51,735 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:1 METHOD:<init> LINE:39 LOG:cachedMainSocketMap1=JLupinSocketWrapperMap{name='working for server:QUEUE - name itself:cachedMainSocketMap1'}
+2018-10-11 15:21:51,735 INFO  [com.jlupin.impl.util.container.socket.JLupinSocketContainer] (pool-6-thread-7) MESSAGE ID:12 METHOD:<init> LINE:40 LOG:cachedMainSocketMap2=JLupinSocketWrapperMap{name='working for server:QUEUE - name itself:cachedMainSocketMap2'}
+2018-10-11 15:21:51,736 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:34 METHOD:start LINE:143 LOG:established no ssl server socket factory
+2018-10-11 15:21:51,736 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:35 METHOD:start LINE:155 LOG:server name:QUEUE socket established:ServerSocket[addr=0.0.0.0/0.0.0.0,localport=20010]
+2018-10-11 15:21:51,736 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:36 METHOD:start LINE:158 LOG:received buffer size: 1152
+2018-10-11 15:21:51,736 INFO  [com.jlupin.impl.server.jnative.defaults.JLupinNativeDefaultServerImpl] (pool-6-thread-7) MESSAGE ID:37 METHOD:start LINE:171 LOG:server name:QUEUE start listen correctly
+2018-10-11 15:21:52,290 INFO  [org.springframework.context.annotation.AnnotationConfigApplicationContext] (pool-6-thread-1) Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@eab7979: startup date [Thu Oct 11 15:21:52 CEST 2018]; root of context hierarchy
+2018-10-11 15:21:53,095 INFO  [com.jlupin.impl.container.application.spring.JLupinAbstractSpringApplicationContainer] (pool-6-thread-1) MESSAGE ID:3 METHOD:load LINE:95 LOG:load application factory:org.springframework.context.annotation.AnnotationConfigApplicationContext@eab7979: startup date [Thu Oct 11 15:21:52 CEST 2018]; root of context hierarchy
+2018-10-11 15:21:53,808 INFO  [com.jlupin.impl.container.application.spring.JLupinAbstractSpringApplicationContainer] (pool-6-thread-1) MESSAGE ID:35 METHOD:load LINE:153 LOG:application factory:org.springframework.context.annotation.AnnotationConfigApplicationContext@eab7979: startup date [Thu Oct 11 15:21:52 CEST 2018]; root of context hierarchy started correctly
+2018-10-11 15:21:54,050 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-6-thread-3) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.entrypoint.microservice.queue.JLupinQueueMicroserviceEntryPointImpl;start;78
+com.jlupin.command.executor.microservice.loadstrategy.impl.jnative.JLupinMicroserviceNativeLoadStrategyImpl;loadConfigurationAndStart;119
+com.jlupin.command.executor.microservice.loadstrategy.impl.base.JLupinBaseMicroserviceLoadStategyImpl;loadConfigurationAndStartServers;34
+com.jlupin.command.executor.microservice.loadstrategy.manager.JLupinMicroserviceLoadStrategyManager;loadAndStartConfiguration;38
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;loadConfigurationAndStartServers;83
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;38
+com.jlupin.starter.microservice.start.JLupinMicroserviceStarter;start;67
+com.jlupin.starter.microservice.init.JLupinMicroserviceInitializer;main;59
+started correctly
+2018-10-11 15:21:54,095 INFO  [com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer] (pool-6-thread-3) MESSAGE ID:22 METHOD:start LINE:897 LOG:load balancer type:INNER_MICROSERVICE with settings:
+connectionConfigurationToConnectWithLocalMicroservicesMap:{}
+jLupinBalancerConnectionToMainServersAsPeersConfiguration:JLupinBalancerConnectionToServerConfiguration{address='null', jlrmcPort=0, queuePort=0, transmissionPort=0, informationPort=0, connectionTimeoutInMilliseconds=2000, readTimeoutInMilliseconds=300000, checkAvailableScript='null', isKeepAlive=false, isOOBInline=false, isTcpNoDelay=false, isReuseAddress=false, sendBufferSize=0, receiveBufferSize=0, soLinger=0, trafficClass=0} invoked from:
+java.lang.Thread;getStackTrace;1559
+com.jlupin.impl.util.JLupinUtil;getCurrentFullStackAsString;634
+com.jlupin.impl.balancer.base.JLupinBaseLoadBalancer;<init>;128
+com.jlupin.impl.balancer.ext.impl.repeat.JLupinAbstractRepeatLoadBalancer;<init>;26
+com.jlupin.impl.balancer.ext.impl.priority.JLupinPriorityLoadBalancerImpl;<init>;25
+com.jlupin.impl.client.util.JLupinClientUtil;generateLoadBalancer;63
+com.jlupin.impl.client.util.JLupinClientUtil;generateInnerMicroserviceLoadBalancerDelegator;119
+com.example.exchange.configuration.ExchangeRatesSpringConfiguration;getJLupinDelegator;21
+com.example.exchange.configuration.ExchangeRatesSpringConfiguration$$EnhancerBySpringCGLIB$$bb28bd42;CGLIB$getJLupinDelegator$0;-1
+com.example.exchange.configuration.ExchangeRatesSpringConfiguration$$EnhancerBySpringCGLIB$$bb28bd42$$FastClassBySpringCGLIB$$a2a0cc74;invoke;-1
+org.springframework.cglib.proxy.MethodProxy;invokeSuper;228
+org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor;intercept;361
+com.example.exchange.configuration.ExchangeRatesSpringConfiguration$$EnhancerBySpringCGLIB$$bb28bd42;getJLupinDelegator;-1
+sun.reflect.NativeMethodAccessorImpl;invoke0;-2
+sun.reflect.NativeMethodAccessorImpl;invoke;62
+sun.reflect.DelegatingMethodAccessorImpl;invoke;43
+java.lang.reflect.Method;invoke;498
+org.springframework.beans.factory.support.SimpleInstantiationStrategy;instantiate;154
+org.springframework.beans.factory.support.ConstructorResolver;instantiateUsingFactoryMethod;582
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;instantiateUsingFactoryMethod;1247
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBeanInstance;1096
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;doCreateBean;535
+org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory;createBean;495
+org.springframework.beans.factory.support.AbstractBeanFactory;lambda$doGetBean$0;317
+org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;getSingleton;222
+org.springframework.beans.factory.support.AbstractBeanFactory;doGetBean;315
+org.springframework.beans.factory.support.AbstractBeanFactory;getBean;199
+org.springframework.beans.factory.support.DefaultListableBeanFactory;preInstantiateSingletons;759
+org.springframework.context.support.AbstractApplicationContext;finishBeanFactoryInitialization;869
+org.springframework.context.support.AbstractApplicationContext;refresh;550
+org.springframework.context.annotation.AnnotationConfigApplicationContext;<init>;88
+com.example.exchange.configuration.ExchangeRatesJLupinConfiguration$1;getAbstractApplicationContext;18
+com.jlupin.impl.container.application.spring.JLupinAbstractSpringApplicationContainer;load;84
+com.jlupin.command.executor.microservice.JLupinMicroserviceServerCommandExecutor;startApplicationContainer;185
+com.jlupin.command.interpreter.bytes.microservice.JLupinMicroserviceByteCommandInterpreter;doCommand;48
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartApplicationContainerFunctionImpl;doCommand;18
+com.jlupin.command.interpreter.transmission.microservice.function.impl.JLupinMicroserviceTransmissionStartApplicationContainerFunctionImpl;doCommand;12
+com.jlupin.command.interpreter.transmission.microservice.JLupinMicroserviceTransmissionCommandInterpreter;doCommand;63
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl$1;executingInputAndGetOutputAsByteArrayWithPrintStreaming;35
+com.jlupin.impl.util.communication.protocol.transmission.JLupinCommunicationTransmissionProtocolUtil;receivedAndSendObjectWithPrintStreamingByOpenedSocketWithItsClosing;54
+com.jlupin.impl.entrypoint.microservice.transmission.JLupinTransmissionMicroserviceEntryPointImpl;doEntry;25
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;204
+com.jlupin.impl.server.jnative.defaults.strategy.service.base.JLupinBaseAbstractServiceStrategy$ThreadCallable;call;185
+java.util.concurrent.FutureTask;run;266
+java.util.concurrent.ThreadPoolExecutor;runWorker;1149
+java.util.concurrent.ThreadPoolExecutor$Worker;run;624
+java.lang.Thread;run;748
+started correctly

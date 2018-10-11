@@ -1,0 +1,19 @@
+[2018-10-11 15:21:03]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.jlupin.impl.microservice.partofjlupin.httpsessionrepository.configuration.HttpSessionRepositoryJLupinConfiguration
+[2018-10-11 15:21:03]produced with success JLupinApplicationContainer:com.jlupin.impl.microservice.partofjlupin.httpsessionrepository.configuration.HttpSessionRepositoryJLupinConfiguration$1
+[2018-10-11 15:21:04]microservice:http-session-repository identity by os microservice id:20320 started correctly
+[2018-10-11 15:21:04]memory state for local server after start microservice:
+total memory:256.5 megabytes
+free  memory:105.3 megabytes
+used  memory:151.2 megabytes
+max   memory:455.5 megabytes
+[2018-10-11 15:21:04]microservice identity by os microservice id:20320 for microservice:http-session-repository initialized correctly
+[2018-10-11 15:21:04][JLPIT]-[PROCESS_ID]20320[/PROCESS_ID]-[/JLPIT]
+[2018-10-11 15:21:04][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-10-11 15:21:04][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:21:05]user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/http-session-repository
+[2018-10-11 15:21:05]temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:21:05]all microservers for microservice:http-session-repository started correctly
+[2018-10-11 15:21:05]servers are starting now and this operation takes so far:0 seconds (12 milliseconds)
+[2018-10-11 15:21:07]application container is loading now and this operation takes so far:1 seconds (1812 milliseconds)
+[2018-10-11 15:21:07]application container for:http-session-repository started correctly
+[2018-10-11 15:21:07]System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/http-session-repository/http-session-repository_system_out_%g.log

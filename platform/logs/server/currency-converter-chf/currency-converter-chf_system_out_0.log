@@ -1,0 +1,19 @@
+[2018-10-11 15:20:56]found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.example.currency.converter.configuration.CurrencyConverterChfJLupinConfiguration
+[2018-10-11 15:20:56]produced with success JLupinApplicationContainer:com.example.currency.converter.configuration.CurrencyConverterChfJLupinConfiguration$1
+[2018-10-11 15:20:57]microservice:currency-converter-chf identity by os microservice id:20250 started correctly
+[2018-10-11 15:20:57]memory state for local server after start microservice:
+total memory:85.0  megabytes
+free  memory:7.4   megabytes
+used  memory:77.6  megabytes
+max   memory:114.0 megabytes
+[2018-10-11 15:20:57]microservice identity by os microservice id:20250 for microservice:currency-converter-chf initialized correctly
+[2018-10-11 15:20:57][JLPIT]-[PROCESS_ID]20250[/PROCESS_ID]-[/JLPIT]
+[2018-10-11 15:20:57][JLPIOST]-[PROCESS_INIT_SUCCESS]-[/JLPIOST]
+[2018-10-11 15:20:57][JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST]
+[2018-10-11 15:20:58]user.dir:/home/piotr/IdeaProjects/exchange-project/platform/application/currency-converter-chf
+[2018-10-11 15:20:58]temp.dir:/home/piotr/IdeaProjects/exchange-project/platform/start/temp
+[2018-10-11 15:20:58]all microservers for microservice:currency-converter-chf started correctly
+[2018-10-11 15:20:58]servers are starting now and this operation takes so far:0 seconds (8 milliseconds)
+[2018-10-11 15:21:00]application container is loading now and this operation takes so far:2 seconds (2068 milliseconds)
+[2018-10-11 15:21:00]application container for:currency-converter-chf started correctly
+[2018-10-11 15:21:00]System.out and System.err was redirect to:/home/piotr/IdeaProjects/exchange-project/platform/logs/server/currency-converter-chf/currency-converter-chf_system_out_%g.log
